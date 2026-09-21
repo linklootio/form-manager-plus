@@ -244,7 +244,7 @@ for (const root of document.querySelectorAll('[data-fmp-ajax]')) {
         aria: {orderable: t('ui_4154c9515f3c'), orderableReverse: t('ui_2a5cd31bc9e8'), orderableRemove: t('ui_b70bdc2bd531'),
             paginate: {first: t('ui_0bdbb750609c'), previous: t('ui_1208ec01f223'), next: t('ui_c08ac736a5e2'), last: t('ui_4543708d1196'), number: t('ui_6076934f99bd')}}};
     table = new DataTable(tableElement, {
-        serverSide: true, processing: true, pageLength: 25, lengthMenu: [10, 25, 50, 100, 250], order: [[1, 'asc']], orderMulti: false,
+        serverSide: true, processing: false, pageLength: 25, lengthMenu: [10, 25, 50, 100, 250], order: [[1, 'asc']], orderMulti: false,
         layout: {topStart: null, topEnd: null, bottomStart: 'info', bottomEnd: ['pageLength', 'paging']}, stateSave: true, stateDuration: MAX_AGE / 1000, language,
         stateSaveParams: (_settings, state) => { Object.assign(state, {fmpStorage: storage, fmpResponsible: responsible, fmpTeam: team, fmpCategory: category, fmpMode: mode, fmpView: selectedView, fmpGrouped: grouped, fmpCustomSort: customSort}); },
         stateSaveCallback: (_settings, state) => { if (!failed) { try { localStorage.setItem(stateKey, JSON.stringify(state)); } catch { /* Optional browser storage. */ } } },
@@ -272,6 +272,20 @@ for (const root of document.querySelectorAll('[data-fmp-ajax]')) {
         ajax: async (request, callback) => {
             bulk.scope(JSON.stringify([request.search.value, category, mode, responsible, team, storage]));
             pending?.abort(); const controller = new AbortController(); pending = controller;
+            // Replace the displayed rows while keeping DataTables' cached row
+            // nodes intact. Its next draw restores the result or empty state.
+            const body = tableElement.tBodies[0];
+            const previousLoadingCell = body.querySelector('.fmp-loading-cell');
+            const height = previousLoadingCell ? Number.parseFloat(previousLoadingCell.style.height) : Math.max(96, body.getBoundingClientRect().height);
+            const loadingRow = element('tr', undefined, 'fmp-loading-row');
+            const loadingCell = element('td', undefined, 'fmp-loading-cell');
+            loadingCell.colSpan = fields.length;
+            loadingCell.style.height = height + 'px';
+            const loadingText = element('span', t('ui_1185ff3323eb'));
+            loadingText.setAttribute('role', 'status');
+            loadingCell.append(loadingText); loadingRow.append(loadingCell);
+            body.replaceChildren(loadingRow);
+            tableElement.setAttribute('aria-busy', 'true');
             const url = new URL(root.dataset.url, location.origin); const order = request.order[0];
             Object.entries({draw: request.draw, start: request.start, length: request.length, search: request.search.value,
                 sort: order ? fields[order.column] || 'name' : customSort?.sort || (mode === 'recent' ? 'lastEdited' : 'name'), direction: order ? order.dir : customSort?.direction || (mode === 'recent' ? 'desc' : 'asc'),
@@ -408,6 +422,8 @@ for (const root of document.querySelectorAll('[data-fmp-ajax]')) {
                 // Demo infrastructure may safely renew its overview. No Core auth
                 // is bypassed, and regular installations retain their own login flow.
                 window.parent.postMessage({type: 'fmp-list-load-error'}, location.origin);
+            } finally {
+                if (pending === controller) tableElement.setAttribute('aria-busy', 'false');
             }
         },
         drawCallback: function () {
