@@ -21,6 +21,24 @@ TYPO3 form organization by scheffer-webdesign / LinkLoot. Version **1.0.0** for 
 
 Pro is a separate extension requiring Lite. Installing Lite alone does not expose Pro API operations. Pro features remain visible in Lite with PRO badges and an informational preview; using them requires the Pro add-on. No remote licence service, telemetry or online activation is used. Commercial distribution does not change the included GPL licence.
 
+## Screenshots
+
+Captured in TYPO3 13.4 with the dark backend theme and demo data.
+Controls marked PRO are visible previews in Lite; using them requires the add-on.
+
+### Form library
+
+Browse forms with their purpose, categories and usage references.
+
+![Lite form library with category navigation and search](Documentation/Images/lite-library.png)
+
+### Metadata in the form editor
+
+Edit the purpose and categories alongside the native form settings.
+Ownership, team notes and history are marked as Pro features.
+
+![Metadata tab in the native form editor, with locked Pro fields](Documentation/Images/lite-metadata.png)
+
 ## Installation
 
 ### Test directly from GitHub
