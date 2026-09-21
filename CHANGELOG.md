@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.1
+
+- Replace table rows with one centred loading row during AJAX requests.
+- Remove the floating processing overlay and duplicate loading messages.
+- Preserve the loading area during consecutive requests and restore rows afterwards.
+- Normalize empty internal notes so Lite can save metadata for new forms.
+
 ## 1.0.0 — prepared release
 
 - Use the `linkloot` Composer vendor for both packages and their dependency.

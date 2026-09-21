@@ -1,6 +1,6 @@
 # Form Manager Plus Lite
 
-TYPO3 form organization by scheffer-webdesign / LinkLoot. Version **1.0.0** for **TYPO3 13.4 and 14.3**, with **PHP 8.2 to 8.4** subject to the chosen Core version's requirements.
+TYPO3 form organization by scheffer-webdesign / LinkLoot. Version **1.0.1** for **TYPO3 13.4 and 14.3**, with **PHP 8.2 to 8.4** subject to the chosen Core version's requirements.
 
 - Composer package: `linkloot/form-manager-plus`
 - Extension key: `form_manager_plus`
@@ -52,7 +52,7 @@ vendor/bin/typo3 extension:setup
 vendor/bin/typo3 cache:flush
 ```
 
-The current branch is `dev-main`; the 1.0.0 release is still a draft.
+For the released version, use `composer require linkloot/form-manager-plus:^1.0.1`.
 
 ### Install supplied archives
 
@@ -64,8 +64,8 @@ For installation from the supplied ZIP archives, place the package folders under
     "type": "path",
     "url": "packages/*",
     "options": {"versions": {
-      "linkloot/form-manager-plus": "1.0.0",
-      "linkloot/form-manager-plus-pro": "1.0.0"
+      "linkloot/form-manager-plus": "1.0.1",
+      "linkloot/form-manager-plus-pro": "1.0.1"
     }}
   }]
 }
