@@ -44,6 +44,11 @@ final class WorkspaceData
     public function profile(string $identifier): array
     {
         $row = $this->pool->getConnectionForTable('tx_formmanagerplus_profile')->select(['*'], 'tx_formmanagerplus_profile', ['form_key' => self::key($identifier)])->fetchAssociative();
+        if ($row) {
+            // Newly created profiles leave the nullable TEXT column unset.
+            // The profile API and Lite's preservation path require a string.
+            $row['notes'] ??= '';
+        }
         return $row ?: ['purpose' => '', 'responsible' => '', 'responsible_user' => 0, 'notes' => '', 'revision' => 0];
     }
     public function assignCreator(string $identifier): void

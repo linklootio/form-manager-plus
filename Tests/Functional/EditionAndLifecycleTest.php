@@ -165,6 +165,24 @@ final class EditionAndLifecycleTest extends FunctionalTestCase
         $user->workspace = 0;
     }
 
+    public function testLiteCanSavePurposeForProfileWithNullNotes(): void
+    {
+        $pool = GeneralUtility::makeInstance(ConnectionPool::class);
+        $pool->getConnectionForTable('be_users')->insert('be_users', ['uid' => 1, 'username' => 'qa', 'admin' => 1, 'password' => 'disabled-test-account']);
+        $this->setUpBackendUser(1);
+        $identifier = '1:/new.form.yaml';
+        $pool->getConnectionForTable('tx_formmanagerplus_profile')->insert('tx_formmanagerplus_profile', ['form_key' => WorkspaceData::key($identifier), 'form_identifier' => $identifier, 'responsible' => 'Existing team', 'responsible_user' => 1, 'notes' => null, 'revision' => 1]);
+        $data = new WorkspaceData($pool);
+        $before = $data->profile($identifier);
+        self::assertSame('', $before['notes']);
+        $saved = $data->saveProfile($identifier, array_replace($before, ['purpose' => 'A valid purpose', 'responsible_user' => (int)$before['responsible_user']]));
+        self::assertSame('A valid purpose', $saved['purpose']);
+        self::assertSame('Existing team', $saved['responsible']);
+        self::assertSame(1, (int)$saved['responsible_user']);
+        self::assertSame('', $saved['notes']);
+        self::assertSame(2, (int)$saved['revision']);
+    }
+
     public function testConcurrentProfileChangeIsRejectedWithoutLosingSavedValue(): void
     {
         $pool = GeneralUtility::makeInstance(ConnectionPool::class);
