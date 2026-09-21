@@ -21,7 +21,7 @@ jobs:
           --health-cmd="healthcheck.sh --connect --innodb_initialized"
           --health-interval=10s --health-timeout=5s --health-retries=10
     env:
-      COMPOSER_ROOT_VERSION: '1.0.0'
+      COMPOSER_ROOT_VERSION: '1.0.1'
       typo3DatabaseDriver: ${{ matrix.database }}
       typo3DatabaseHost: '127.0.0.1'
       typo3DatabaseUsername: root

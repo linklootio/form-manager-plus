@@ -15,7 +15,7 @@ Use `composer update --with "typo3/cms-core:~13.4.0"` or the corresponding `~14.
 For a Pro checkout next to the Lite checkout, configure its dependency before installation:
 
 ```bash
-composer config repositories.lite '{"type":"path","url":"../form_manager_plus","options":{"versions":{"linkloot/form-manager-plus":"1.0.0"}}}'
+composer config repositories.lite '{"type":"path","url":"../form_manager_plus","options":{"versions":{"linkloot/form-manager-plus":"1.0.1"}}}'
 ```
 
 A Docker runtime can be built with `docker build -t fmp-tests -f Build/Dockerfile .`.
