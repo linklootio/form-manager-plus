@@ -118,10 +118,16 @@ final class EditionAndLifecycleTest extends FunctionalTestCase
         $response = $controller->listAction($request);
         self::assertSame(200, $response->getStatusCode());
         self::assertSame([], json_decode((string)$response->getBody(), true)['data']);
-        $pool->getConnectionForTable('tx_formmanagerplus_personal')->executeStatement('DROP TABLE tx_formmanagerplus_personal');
-        $response = $controller->listAction($request);
-        self::assertSame(503, $response->getStatusCode());
-        self::assertSame(['error' => 'schema_setup_required'], json_decode((string)$response->getBody(), true));
+        $connection = $pool->getConnectionForTable('tx_formmanagerplus_personal');
+        $connection->executeStatement('ALTER TABLE tx_formmanagerplus_personal RENAME TO tx_formmanagerplus_personal_test_backup');
+        try {
+            $response = $controller->listAction($request);
+            self::assertSame(503, $response->getStatusCode());
+            self::assertSame(['error' => 'schema_setup_required'], json_decode((string)$response->getBody(), true));
+        } finally {
+            // MySQL commits DDL; the framework only truncates between tests.
+            $connection->executeStatement('ALTER TABLE tx_formmanagerplus_personal_test_backup RENAME TO tx_formmanagerplus_personal');
+        }
     }
 
     public function testNestedFormsFollowRenamedFolder(): void
