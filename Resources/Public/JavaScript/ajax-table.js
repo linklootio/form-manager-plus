@@ -276,14 +276,19 @@ for (const root of document.querySelectorAll('[data-fmp-ajax]')) {
             // nodes intact. Its next draw restores the result or empty state.
             const body = tableElement.tBodies[0];
             const previousLoadingCell = body.querySelector('.fmp-loading-cell');
-            const height = previousLoadingCell ? Number.parseFloat(previousLoadingCell.style.height) : Math.max(96, body.getBoundingClientRect().height);
+            const footer = tableElement.closest('.dt-container')?.querySelector('.dt-layout-row:last-child');
+            const availableHeight = window.innerHeight - Math.max(0, tableElement.tHead.getBoundingClientRect().bottom) - (footer?.getBoundingClientRect().height || 44) - 24;
+            const previousHeight = previousLoadingCell ? Number.parseFloat(previousLoadingCell.style.height) : body.getBoundingClientRect().height;
+            const height = Math.max(160, availableHeight, previousHeight);
             const loadingRow = element('tr', undefined, 'fmp-loading-row');
             const loadingCell = element('td', undefined, 'fmp-loading-cell');
             loadingCell.colSpan = fields.length;
             loadingCell.style.height = height + 'px';
+            const loadingContent = element('div', undefined, 'fmp-loading-content');
+            loadingContent.style.minHeight = height + 'px';
             const loadingText = element('span', t('ui_1185ff3323eb'));
             loadingText.setAttribute('role', 'status');
-            loadingCell.append(loadingText); loadingRow.append(loadingCell);
+            loadingContent.append(loadingText); loadingCell.append(loadingContent); loadingRow.append(loadingCell);
             body.replaceChildren(loadingRow);
             tableElement.setAttribute('aria-busy', 'true');
             const url = new URL(root.dataset.url, location.origin); const order = request.order[0];

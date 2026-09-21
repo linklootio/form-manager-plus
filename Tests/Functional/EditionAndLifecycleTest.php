@@ -43,7 +43,7 @@ final class EditionAndLifecycleTest extends FunctionalTestCase
             \TYPO3\CMS\Core\Core\Environment::initialize(...$classic);
             $manager = new \TYPO3\CMS\Core\Package\PackageManager(new \TYPO3\CMS\Core\Service\DependencyOrderingService());
             $package = new \TYPO3\CMS\Core\Package\Package($manager, 'form_manager_plus', dirname(__DIR__, 2) . '/');
-            self::assertSame('1.0.1', $package->getPackageMetaData()->getVersion());
+            self::assertSame('1.0.2', $package->getPackageMetaData()->getVersion());
             self::assertSame('form_manager_plus', $package->getPackageKey());
         } finally {
             \TYPO3\CMS\Core\Core\Environment::initialize(...$environment);

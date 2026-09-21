@@ -106,7 +106,8 @@
 .dt-paging-button[aria-disabled=true]{opacity:.4;pointer-events:none}
 .fmp-library .dt-empty{text-align:center;padding:55px 20px!important;color:var(--fmp-muted)}
 .fmp-library .dt-layout-table>.dt-layout-cell{position:relative}
-.fmp-library .fmp-table .fmp-loading-cell{text-align:center;vertical-align:middle;padding:24px!important;color:var(--fmp-muted);background:var(--fmp-bg)}
+.fmp-library .fmp-table .fmp-loading-cell{text-align:center;vertical-align:middle;padding:0!important;color:var(--fmp-muted);background:var(--fmp-bg)}
+.fmp-loading-content{display:grid;place-items:center;box-sizing:border-box;width:100%;padding:24px;text-align:center}
 .fmp-maintenance-note,[data-fmp-error]{padding:13px 16px;border:1px solid #e9c59a;border-radius:7px;background:#fff5e8;color:#754000;font-size:12px;line-height:1.6;margin:0 0 20px}
 [data-fmp-error]{border-color:#d9a79b;background:#fff1ed;color:#812d18}
 .fmp-status{font-size:10px;white-space:normal;border-radius:4px;padding:2px 5px;margin:5px 0 0;display:block;width:fit-content}

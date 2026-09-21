@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.2
+
+- Centre the loading message horizontally and vertically in the available table area.
+- Keep a single table loading row, including during rapid filter and sorting changes.
+
 ## 1.0.1
 
 - Replace table rows with one centred loading row during AJAX requests.
