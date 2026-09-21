@@ -2,7 +2,7 @@
 
 TYPO3 form organization by scheffer-webdesign / LinkLoot. Version **1.0.0** for **TYPO3 13.4 and 14.3**, with **PHP 8.2 to 8.4** subject to the chosen Core version's requirements.
 
-- Composer package: `scheffer-webdesign/form-manager-plus`
+- Composer package: `linkloot/form-manager-plus`
 - Extension key: `form_manager_plus`
 - Product: https://typo3.linkloot.io/
 - Licence: GPL-2.0-or-later. See [LICENSE](LICENSE).
@@ -19,9 +19,24 @@ TYPO3 form organization by scheffer-webdesign / LinkLoot. Version **1.0.0** for 
 | Bulk categories/ownership, ZIP export | — | Yes |
 | Import and single-form export | — | Yes |
 
-Pro is a separate extension requiring Lite. Installing Lite alone does not expose Pro API operations. Pro badges identify installed Pro features. No remote licence service, telemetry or online activation is used. Commercial distribution does not change the included GPL licence.
+Pro is a separate extension requiring Lite. Installing Lite alone does not expose Pro API operations. Pro features remain visible in Lite with PRO badges and an informational preview; using them requires the Pro add-on. No remote licence service, telemetry or online activation is used. Commercial distribution does not change the included GPL licence.
 
 ## Installation
+
+### Test directly from GitHub
+
+No TER or Packagist registration is needed. In the TYPO3 project root, run:
+
+```bash
+composer config repositories.fmp vcs https://github.com/linklootio/form-manager-plus
+composer require linkloot/form-manager-plus:dev-main
+vendor/bin/typo3 extension:setup
+vendor/bin/typo3 cache:flush
+```
+
+The current branch is `dev-main`; the 1.0.0 release is still a draft.
+
+### Install supplied archives
 
 For installation from the supplied ZIP archives, place the package folders under `packages/` in a TYPO3 project. Pro installations need **both** folders. Add the following path repository to the project's Composer configuration:
 
@@ -31,8 +46,8 @@ For installation from the supplied ZIP archives, place the package folders under
     "type": "path",
     "url": "packages/*",
     "options": {"versions": {
-      "scheffer-webdesign/form-manager-plus": "1.0.0",
-      "scheffer-webdesign/form-manager-plus-pro": "1.0.0"
+      "linkloot/form-manager-plus": "1.0.0",
+      "linkloot/form-manager-plus-pro": "1.0.0"
     }}
   }]
 }
@@ -41,7 +56,7 @@ For installation from the supplied ZIP archives, place the package folders under
 Then run in the TYPO3 project:
 
 ```bash
-composer require scheffer-webdesign/form-manager-plus:^1.0
+composer require linkloot/form-manager-plus:^1.0
 vendor/bin/typo3 extension:setup
 vendor/bin/typo3 cache:flush
 ```

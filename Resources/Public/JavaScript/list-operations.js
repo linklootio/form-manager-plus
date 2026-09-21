@@ -1,5 +1,5 @@
 import {translate} from '@scheffer/form-manager-plus/translations.js';
-import {element, errorText, proBadge} from '@scheffer/form-manager-plus/tools-client.js';
+import {element, errorText, proBadge, proPreview} from '@scheffer/form-manager-plus/tools-client.js';
 
 export async function duplicateForm(root, row, de) {
     const t = translate;
@@ -17,6 +17,10 @@ export async function duplicateForm(root, row, de) {
     const check = (text) => { const label = element('label', undefined, 'fmp-operation-check d-flex align-items-center gap-2'); const input = element('input'); input.type = 'checkbox'; label.append(input, document.createTextNode(text)); body.append(label); return input; };
     const categories = check(t('ui_ed55a43f251c'));
     const metadata = check(root.dataset.pro === '1' ? t('ui_4fb6a31f6868') : t('ui_e31c440a4276'));
+    if (root.dataset.pro !== '1') {
+        const metadataPreview = element('button', t('ui_4fb6a31f6868'), 'btn btn-default'); metadataPreview.type = 'button';
+        metadataPreview.append(proBadge(de)); body.append(proPreview(metadataPreview));
+    }
     body.append(element('p', t('ui_d67149ae506d')));
     const status = element('p'); status.setAttribute('role', 'status'); body.append(status);
     let busy = false, destination = '';

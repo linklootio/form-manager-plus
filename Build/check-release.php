@@ -28,5 +28,5 @@ if ($key === 'form_manager_plus') {
     $js = file_get_contents($root . '/Resources/Public/JavaScript/translations.js');
     preg_match_all('/"(ui_[a-f0-9]+)":/', $js, $matches);
     foreach ($matches[1] as $id) ensure(in_array('fmp.' . $id, $labels[0], true), 'Missing UI translation ' . $id);
-} else ensure(isset($composer['require']['scheffer-webdesign/form-manager-plus']), 'Pro must depend on Lite');
+} else ensure(isset($composer['require']['linkloot/form-manager-plus']), 'Pro must depend on Lite');
 echo "PASS {$key} {$version}: metadata, documentation, licence, edition boundary and translations\n";

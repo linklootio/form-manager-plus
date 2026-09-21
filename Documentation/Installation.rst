@@ -9,7 +9,7 @@ publication, as shown in the README. Pro requires both package folders.
 
 .. code-block:: bash
 
-   composer require scheffer-webdesign/form-manager-plus:^1.0
+   composer require linkloot/form-manager-plus:^1.0
    vendor/bin/typo3 extension:setup
    vendor/bin/typo3 cache:flush
 

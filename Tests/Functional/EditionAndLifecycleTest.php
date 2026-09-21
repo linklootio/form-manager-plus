@@ -68,7 +68,7 @@ final class EditionAndLifecycleTest extends FunctionalTestCase
         $pool->getConnectionForTable('be_users')->insert('be_users', ['uid' => 1, 'username' => 'qa', 'admin' => 1, 'password' => 'disabled-test-account']);
         $this->setUpBackendUser(1);
         $GLOBALS['LANG'] = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Localization\LanguageServiceFactory::class)->create('en');
-        $GLOBALS['TYPO3_CONF_VARS']['BE']['defaultPageTSconfig'] = ($GLOBALS['TYPO3_CONF_VARS']['BE']['defaultPageTSconfig'] ?? '') . "\ntemplates.typo3/cms-form.1700 = scheffer-webdesign/form-manager-plus:Resources/Private\n";
+        $GLOBALS['TYPO3_CONF_VARS']['BE']['defaultPageTSconfig'] = ($GLOBALS['TYPO3_CONF_VARS']['BE']['defaultPageTSconfig'] ?? '') . "\ntemplates.typo3/cms-form.1700 = linkloot/form-manager-plus:Resources/Private\n";
         $request = (new \TYPO3\CMS\Core\Http\ServerRequest('https://example.test/typo3/'))
             ->withAttribute('applicationType', \TYPO3\CMS\Core\Core\SystemEnvironmentBuilder::REQUESTTYPE_BE)
             ->withQueryParams(['op' => 'bulk', 'pro' => '1']);
@@ -102,6 +102,26 @@ final class EditionAndLifecycleTest extends FunctionalTestCase
         $listener->before(new \TYPO3\CMS\Core\Resource\Event\BeforeFileDeletedEvent($file));
         $listener->after(new \TYPO3\CMS\Core\Resource\Event\AfterFileDeletedEvent($file));
         self::assertSame('', $data->profile($current)['purpose']);
+    }
+
+    public function testListWorksWithoutProAndReportsMissingSchema(): void
+    {
+        $pool = GeneralUtility::makeInstance(ConnectionPool::class);
+        $pool->getConnectionForTable('be_users')->insert('be_users', ['uid' => 1, 'username' => 'qa', 'admin' => 1, 'password' => 'disabled-test-account']);
+        $this->setUpBackendUser(1);
+        $GLOBALS['LANG'] = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Localization\LanguageServiceFactory::class)->create('en');
+        $GLOBALS['TYPO3_CONF_VARS']['BE']['defaultPageTSconfig'] = ($GLOBALS['TYPO3_CONF_VARS']['BE']['defaultPageTSconfig'] ?? '') . "\ntemplates.typo3/cms-form.1700 = linkloot/form-manager-plus:Resources/Private\n";
+        $request = (new \TYPO3\CMS\Core\Http\ServerRequest('https://example.test/typo3/'))
+            ->withAttribute('applicationType', \TYPO3\CMS\Core\Core\SystemEnvironmentBuilder::REQUESTTYPE_BE);
+        $GLOBALS['TYPO3_REQUEST'] = $request;
+        $controller = GeneralUtility::getContainer()->get(\SchefferWebdesign\FormManagerPlus\Controller\ListController::class);
+        $response = $controller->listAction($request);
+        self::assertSame(200, $response->getStatusCode());
+        self::assertSame([], json_decode((string)$response->getBody(), true)['data']);
+        $pool->getConnectionForTable('tx_formmanagerplus_personal')->executeStatement('DROP TABLE tx_formmanagerplus_personal');
+        $response = $controller->listAction($request);
+        self::assertSame(503, $response->getStatusCode());
+        self::assertSame(['error' => 'schema_setup_required'], json_decode((string)$response->getBody(), true));
     }
 
     public function testNestedFormsFollowRenamedFolder(): void

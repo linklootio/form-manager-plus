@@ -1187,6 +1187,7 @@
       <trans-unit id="fmp.php_e2d0a54968ea" resname="fmp.php_e2d0a54968ea" xml:space="preserve">
         <source>Delete</source>
       </trans-unit>
+      <trans-unit id="fmp.schema_setup_required" resname="fmp.schema_setup_required"><source>The Form Manager Plus database schema is incomplete. Ask an administrator to run TYPO3 extension:setup and flush the caches.</source></trans-unit>
     </body>
   </file>
 </xliff>

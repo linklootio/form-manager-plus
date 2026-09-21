@@ -1,5 +1,5 @@
 import {translate} from '@scheffer/form-manager-plus/translations.js';
-import {request, element, errorText, renderFindings, proBadge} from '@scheffer/form-manager-plus/tools-client.js';
+import {request, element, errorText, renderFindings, proBadge, proFieldPreview} from '@scheffer/form-manager-plus/tools-client.js';
 const root = document.querySelector('[data-fmp-workbench]');
 if (root) {
     const config = JSON.parse(root.dataset.config);
@@ -92,7 +92,8 @@ if (root) {
             const wrapper = element('label', label); if (key !== 'purpose') { const heading = element('span', label); heading.append(proBadge(de)); wrapper.replaceChildren(heading); }
             const input = element(multiline ? 'textarea' : 'input'); input.name = key; input.maxLength = limit; input.className = 'form-control';
             if (multiline) input.rows = 6;
-            wrapper.hidden = key !== 'purpose' && !config.pro; wrapper.append(input); form.append(wrapper); fields[key] = input;
+            wrapper.append(input); form.append(wrapper); fields[key] = input;
+            if (key !== 'purpose' && !config.pro) proFieldPreview(wrapper, input);
         }
         const userWrapper = element('label', t('ui_6d0db0ecf197'));
         const responsibleUser = element('select', undefined, 'form-select'); responsibleUser.name = 'responsible_user';
@@ -100,7 +101,8 @@ if (root) {
         const userHeading = element('span', userWrapper.textContent); userHeading.append(proBadge(de)); userWrapper.replaceChildren(userHeading, responsibleUser);
         fields.responsible.closest('label').before(userWrapper);
         userWrapper.append(element('small', t('ui_3802c445c835')));
-        fields.responsible_user = responsibleUser; userWrapper.hidden = !config.pro;
+        fields.responsible_user = responsibleUser;
+        if (!config.pro) proFieldPreview(userWrapper, responsibleUser);
         let revision = 0, dirty = false;
         root.addEventListener('fmp-revision', event => { revision = event.detail; });
         const save = button(t('ui_06d1ae6bcb25'), 'btn btn-primary'); save.type = 'submit';
@@ -114,7 +116,7 @@ if (root) {
                 const unavailable = new Option(t('ui_5b700343aea6'), String(currentUser)); unavailable.disabled = true; responsibleUser.add(unavailable);
             }
             for (const [key, field] of Object.entries(fields)) { field.value = key === 'responsible_user' ? String(currentUser) : data.profile[key] || ''; field.readOnly = !data.editable; }
-            responsibleUser.disabled = !data.editable;
+            responsibleUser.disabled = !data.editable || !config.pro;
             revision = Number(data.profile.revision); dirty = false; save.disabled = !data.editable;
             if (!data.editable) panel.append(element('p', t('ui_b7f150cc24cc')));
         };

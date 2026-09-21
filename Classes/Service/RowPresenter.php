@@ -47,6 +47,7 @@ final class RowPresenter
             $title = $menuLabels[$key] ?? $label($key);
             return '<a class="btn btn-default btn-sm" href="' . $e($href) . '" title="' . $e($title) . '" aria-label="' . $e($title) . '"'
                 . ($key === 'export' ? ' data-fmp-action="export"' : '')
+                . ($key === 'export' && !Edition::pro() ? ' data-fmp-pro-preview="1"' : '')
                 . ($href === '#' ? ' data-fmp-action="' . ['duplicate' => 'duplicateForm', 'delete' => 'removeForm'][$key] . '"' : '') . '>'
                 . $this->icons->getIcon($icon, IconSize::SMALL)->render()
                 . ($key === 'export' ? '<span class="fmp-action-label">' . $e($title) . '</span><span class="fmp-pro-badge">PRO</span>' : '') . '</a>';
@@ -58,8 +59,8 @@ final class RowPresenter
         if (empty($form['invalid'])) {
             $actions .= $action('duplicate', 'actions-duplicate');
         }
-        if (Edition::pro() && empty($form['invalid'])) {
-            $actions .= $action('export', 'actions-download', (string)$this->uris->buildUriFromRoute('ajax_form_manager_plus_tools', ['op' => 'export', 'identifier' => $identifier]));
+        if (empty($form['invalid'])) {
+            $actions .= $action('export', 'actions-download', Edition::pro() ? (string)$this->uris->buildUriFromRoute('ajax_form_manager_plus_tools', ['op' => 'export', 'identifier' => $identifier]) : 'https://typo3.linkloot.io/');
         }
         $count = (int)($form['referenceCount'] ?? 0);
         if (!empty($form['removable']) && empty($form['readOnly']) && empty($form['invalid']) && $count === 0) {

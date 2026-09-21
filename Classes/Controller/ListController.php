@@ -30,6 +30,16 @@ final class ListController
         } catch (\InvalidArgumentException) {
             return new JsonResponse(['error' => 'Invalid table query'], 400, $headers);
         }
+        try {
+            return $this->renderList($query, $headers);
+        } catch (\Doctrine\DBAL\Exception\TableNotFoundException|\Doctrine\DBAL\Exception\InvalidFieldNameException $exception) {
+            \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Log\LogManager::class)
+                ->getLogger(self::class)->error('Form catalogue database schema is incomplete. Run extension:setup.', ['exception' => $exception]);
+            return new JsonResponse(['error' => 'schema_setup_required'], 503, $headers);
+        }
+    }
+    private function renderList(array $query, array $headers): ResponseInterface
+    {
         // Ownership filters apply only to the already authorized form catalogue.
         // A shared view may reference an owner outside the viewer's user picker.
         if (!\SchefferWebdesign\FormManagerPlus\Service\Edition::pro()) {

@@ -1,5 +1,6 @@
 // English fallback also supports isolated UI tests; TYPO3 XLF overrides take priority.
 const english = {
+  "schema_setup_required": "The Form Manager Plus database schema is incomplete. Ask an administrator to run TYPO3 extension:setup and flush the caches.",
   "ui_003fd8e5671e": "Responsible: ",
   "ui_0094fd79020c": "The definition exceeds the inspection limit.",
   "ui_01c68c023ced": "No accessible categories yet.",

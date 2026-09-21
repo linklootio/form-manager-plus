@@ -4,3 +4,6 @@
 .fmp-history-entry{padding:12px 0;border-bottom:1px solid light-dark(#ddd,#444);font-size:12px;overflow-wrap:anywhere}
 .fmp-history-entry dl{margin:8px 0 0}.fmp-history-entry dt{font-weight:600}.fmp-history-entry dd{margin:3px 0 10px;white-space:pre-wrap}
 .fmp-history-entry time{display:block;opacity:.7;margin-top:3px}.fmp-history-actions{margin-top:10px}
+.fmp-pro-dialog{max-width:min(480px,calc(100vw - 32px));padding:24px;border:1px solid var(--typo3-component-border-color,#aaa);border-radius:10px;background:var(--typo3-component-bg,Canvas);color:var(--typo3-component-color,CanvasText)}
+.fmp-pro-dialog::backdrop{background:rgb(0 0 0 / .45)}
+.fmp-pro-dialog h2{font-size:20px;margin:0 0 14px}.fmp-pro-dialog p{margin-bottom:20px}.fmp-pro-dialog .btn+.btn{margin-inline-start:8px}.fmp-pro-info{justify-self:start}

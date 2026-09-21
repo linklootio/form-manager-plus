@@ -1,5 +1,5 @@
 import {translate} from '@scheffer/form-manager-plus/translations.js';
-import {request, element, errorText, proBadge} from '@scheffer/form-manager-plus/tools-client.js';
+import {request, element, errorText, proBadge, proPreview, proFieldPreview} from '@scheffer/form-manager-plus/tools-client.js';
 
 /** Native form editor extension; description data stays outside the form definition. */
 export function bootstrap(app) {
@@ -28,7 +28,8 @@ export function bootstrap(app) {
         input.name = 'fmp_' + key; input.disabled = true;
         if (limit) input.maxLength = limit;
         if (key === 'notes') input.rows = 4;
-        wrapper.hidden = key !== 'purpose' && !config.pro; wrapper.append(input); panel.append(wrapper); fields[key] = input;
+        wrapper.append(input); panel.append(wrapper); fields[key] = input;
+        if (key !== 'purpose' && !config.pro) proFieldPreview(wrapper, input);
     }
     const categoryField = element('section', undefined, 'fmp-metadata-categories');
     const categoryLabel = element('div', t('ui_b8b1d894c683'), 'fmp-category-field-label'); categoryLabel.id = 'fmp-category-field-label'; categoryField.setAttribute('aria-labelledby', categoryLabel.id);
@@ -78,11 +79,13 @@ export function bootstrap(app) {
     const historyMore = element('button', t('ui_ac8991ef0101'), 'btn btn-default fmp-history-actions'); historyMore.type = 'button'; historyMore.hidden = true;
     const historyStatus = element('p', '', 'fmp-description-status'); historyStatus.setAttribute('role', 'status');
     const historyRetry = element('button', t('ui_d8b8392e2c54'), 'btn btn-default'); historyRetry.type = 'button'; historyRetry.hidden = true;
-    history.append(historyTitle, historyList, historyStatus, historyMore, historyRetry); panel.append(history); history.hidden = !config.pro;
+    history.append(historyTitle, historyList, historyStatus, historyMore, historyRetry); panel.append(history);
+    if (!config.pro) proPreview(historyTitle);
     let historyLoaded = false, historyLoading = false, historyBefore = 0;
     const historyFields = {purpose: t('ui_d4e8830a71c7'), responsible_user: t('ui_bc110a6d0722'), responsible: t('ui_591d9011ca2f'), notes: t('ui_d8ecfc07659d'), categories: t('ui_b8b1d894c683')};
     const displayHistoryValue = value => (Array.isArray(value) ? value.join(', ') : String(value ?? '')).replaceAll('[restricted]', t('ui_6c0c4d6002c3')) || '—';
     async function loadHistory(reset = false) {
+        if (!config.pro) return;
         if (historyLoading) return;
         historyLoading = true; historyMore.disabled = true; historyRetry.hidden = true; historyStatus.textContent = t('ui_ae10e8899978');
         try {
@@ -125,7 +128,7 @@ export function bootstrap(app) {
             if (responsible && !(data.responsibleUsers || []).some(user => user.uid === responsible)) {
                 const option = new Option(t('ui_055770320a7d'), String(responsible)); option.disabled = true; fields.responsible_user.add(option);
             }
-            for (const [key, input] of Object.entries(fields)) { input.value = key === 'responsible_user' ? String(responsible) : data.profile[key] || ''; input.disabled = !data.editable; }
+            for (const [key, input] of Object.entries(fields)) { input.value = key === 'responsible_user' ? String(responsible) : data.profile[key] || ''; input.disabled = !data.editable || (key !== 'purpose' && !config.pro); }
             categoryChoices = categoryData.categories; categoryIds = categoryData.selected.map(Number).sort((a, b) => a - b); categoryBaseline = [...categoryIds]; categoryVersion = categoryData.version; categoriesEditable = data.editable && categoryData.editable;
             renderCategories();
             editable = data.editable; revision = Number(data.profile.revision); loaded = true; baseline = JSON.stringify(values());

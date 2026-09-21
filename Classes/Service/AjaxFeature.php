@@ -16,7 +16,7 @@ final class AjaxFeature
     public static function enabled(): bool
     {
         return (new Typo3Version())->getMajorVersion() >= 13
-            && (BackendUtility::getPagesTSconfig(0)['templates.']['typo3/cms-form.']['1700'] ?? '') === 'scheffer-webdesign/form-manager-plus:Resources/Private';
+            && (BackendUtility::getPagesTSconfig(0)['templates.']['typo3/cms-form.']['1700'] ?? '') === 'linkloot/form-manager-plus:Resources/Private';
     }
     public static function allowed(): bool
     {

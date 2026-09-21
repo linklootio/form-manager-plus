@@ -3,6 +3,32 @@ export function proBadge(de = false) {
     const badge = element('span', 'PRO', 'fmp-pro-badge'); badge.title = translate('ui_7569c02cadc2');
     badge.setAttribute('aria-label', badge.title); return badge;
 }
+export function showProFeature() {
+    const previousFocus = document.activeElement;
+    const dialog = element('dialog', undefined, 'fmp-pro-dialog');
+    const heading = element('h2', 'Form Manager Plus Pro');
+    heading.id = 'fmp-pro-dialog-title'; dialog.setAttribute('aria-labelledby', heading.id);
+    const link = element('a', 'typo3.linkloot.io', 'btn btn-primary');
+    link.href = 'https://typo3.linkloot.io/'; link.target = '_blank'; link.rel = 'noopener noreferrer';
+    const close = element('button', translate('ui_7d9eb7acb13e'), 'btn btn-default'); close.type = 'button';
+    close.addEventListener('click', () => dialog.close());
+    dialog.addEventListener('close', () => { dialog.remove(); previousFocus?.focus(); }, {once: true});
+    dialog.append(heading, element('p', translate('ui_a3fc77617024')), link, close);
+    document.body.append(dialog); dialog.showModal(); close.focus();
+}
+export function proPreview(control) {
+    control.dataset.fmpProPreview = '1';
+    control.title = translate('ui_a3fc77617024');
+    control.addEventListener('click', event => { event.preventDefault(); event.stopImmediatePropagation(); showProFeature(); }, true);
+    return control;
+}
+export function proFieldPreview(wrapper, input) {
+    input.disabled = true;
+    const info = element('button', 'PRO', 'fmp-pro-badge fmp-pro-info');
+    info.type = 'button'; info.setAttribute('aria-label', translate('ui_7569c02cadc2'));
+    const badge = wrapper.querySelector('.fmp-pro-badge');
+    if (badge) badge.replaceWith(proPreview(info)); else wrapper.append(proPreview(info));
+}
 export const messages = {
     pro_required: 'ui_a3fc77617024',
     workspace_readonly: 'ui_ceb98fe0f63e',

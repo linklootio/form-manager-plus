@@ -1,7 +1,7 @@
 import {translate} from '@scheffer/form-manager-plus/translations.js';
 import {duplicateForm} from '@scheffer/form-manager-plus/list-operations.js';
 import DataTable from '../Vendor/DataTables/dataTables.min.mjs';
-import {request as toolsRequest, element, errorText, proBadge} from '@scheffer/form-manager-plus/tools-client.js';
+import {request as toolsRequest, element, errorText, proBadge, proPreview, proFieldPreview, showProFeature} from '@scheffer/form-manager-plus/tools-client.js';
 
 const MAX_AGE = 30 * 24 * 60 * 60 * 1000;
 for (const root of document.querySelectorAll('[data-fmp-ajax]')) {
@@ -86,10 +86,10 @@ for (const root of document.querySelectorAll('[data-fmp-ajax]')) {
     const navigation = element('nav'); navigation.setAttribute('aria-label', t('ui_6fc2a6312846'));
     const mainButtons = new Map();
     for (const [key, symbol] of [['', 'list'], ['mine', 'user'], ['favorites', 'star'], ['recent', 'clock']]) {
-        if (key === 'mine' && !pro) continue;
         const item = button(modeLabels[key], symbol); item.dataset.mode = key; if (key === 'mine') item.append(proBadge(de));
         const count = element('span', '', 'fmp-count'); item.append(count); mainButtons.set(key, item);
         item.addEventListener('click', () => { category = ''; selectedView = 0; changeMode(key); }); navigation.append(item);
+        if (key === 'mine' && !pro) proPreview(item);
     }
     sidebar.append(navigation);
     function section(title, key) {
@@ -104,7 +104,8 @@ for (const root of document.querySelectorAll('[data-fmp-ajax]')) {
     const viewsSection = views.parentElement;
     const viewsSectionWrapper = element('div', undefined, 'fmp-views-section');
     viewsSection.before(viewsSectionWrapper);
-    viewsSectionWrapper.append(viewsSection, viewsPopup.details); viewsSectionWrapper.hidden = !pro;
+    viewsSectionWrapper.append(viewsSection, viewsPopup.details);
+    if (!pro) { proPreview(viewsPopup.summary); views.append(element('p', t('ui_a3fc77617024'), 'fmp-sidebar-hint')); }
     const viewSelect = element('select', undefined, 'form-select'); viewSelect.setAttribute('aria-label', t('ui_d1da5e075c56'));
     const viewName = element('input', undefined, 'form-control'); viewName.maxLength = 80; viewName.placeholder = t('ui_572ffd186209'); viewName.setAttribute('aria-label', viewName.placeholder);
     const viewGroup = element('select', undefined, 'form-select'); viewGroup.setAttribute('aria-label', t('ui_0676784f45f1')); viewGroup.add(new Option(t('ui_bdc0857b99a9'), '0'));
@@ -135,7 +136,7 @@ for (const root of document.querySelectorAll('[data-fmp-ajax]')) {
     searchLabel.append(search); toolbar.append(searchLabel);
     const filters = popup(t('ui_9ab7fb6fea31'), 'filter'); toolbar.append(filters.details);
     const modeLabel = element('label', t('ui_87bb59ba2f92')); const modeSelect = element('select', undefined, 'form-select');
-    for (const [key, label] of Object.entries(modeLabels).filter(([key]) => pro || !['mine', 'stale', 'unreferenced'].includes(key))) modeSelect.add(new Option(label + (['mine', 'stale', 'unreferenced'].includes(key) ? ' · PRO' : ''), key)); modeLabel.append(modeSelect);
+    for (const [key, label] of Object.entries(modeLabels)) modeSelect.add(new Option(label + (['mine', 'stale', 'unreferenced'].includes(key) ? ' · PRO' : ''), key)); modeLabel.append(modeSelect);
     const responsibleLabel = element('label', t('ui_bc110a6d0722')); responsibleLabel.append(proBadge(de));
     const responsibleSelect = element('select', undefined, 'form-select'); responsibleSelect.add(new Option(t('ui_5f198db25a77'), '')); responsibleSelect.add(new Option(t('ui_14d33bd014e6'), 'unassigned')); responsibleLabel.append(responsibleSelect);
     const teamLabel = element('label', t('ui_804beb8dde3b')); teamLabel.append(proBadge(de)); const teamInput = element('input', undefined, 'form-control'); teamInput.maxLength = 255; teamLabel.append(teamInput);
@@ -145,12 +146,13 @@ for (const root of document.querySelectorAll('[data-fmp-ajax]')) {
     const reset = button(t('ui_10afa98480f2'), null, 'fmp-secondary');
     const refresh = button(t('ui_bdc090ec61e3'), 'refresh', 'fmp-secondary');
     const importLink = element('a', t('ui_71aacd3ac702'), 'fmp-secondary'); importLink.href = root.dataset.toolsPage;
-    importLink.append(proBadge(de)); if (pro) createSlot.append(importLink);
-    responsibleLabel.hidden = teamLabel.hidden = !pro;
+    importLink.append(proBadge(de)); createSlot.append(importLink);
+    if (!pro) { proPreview(importLink); proFieldPreview(responsibleLabel, responsibleSelect); proFieldPreview(teamLabel, teamInput); }
     const storageLabel = element('label', t('ui_a59e289477fe'));
     const storageSelect = element('select', undefined, 'form-select'); storageLabel.append(storageSelect);
     storageSelect.addEventListener('change', () => { storage = storageSelect.value; selectedView = 0; sync(); table.page('first').draw(); });
     const bulk = pro ? (await import('@scheffer/form-manager-plus-pro/bulk-selection.js')).bulkSelection(root, tableElement, toolbar, tool, de, () => { forceRefresh = true; table.ajax.reload(null, false); }) : {scope() {}, draw() {}};
+    if (!pro) { const bulkPreview = button(t('ui_19f0dd9ac406'), 'list', 'fmp-secondary'); bulkPreview.append(proBadge(de)); toolbar.append(proPreview(bulkPreview)); }
     filters.body.append(element('h3', t('ui_9ab7fb6fea31')), modeLabel, storageLabel, responsibleLabel, teamLabel, groupLabel, reset, refresh);
     rememberDisclosure(filters.details, 'filters', false);
     note.textContent = t('ui_ae661efc63d6');
@@ -190,7 +192,7 @@ for (const root of document.querySelectorAll('[data-fmp-ajax]')) {
         filters.summary.classList.toggle('fmp-filter-active', Boolean(mode || category || responsible || team || storage || search.value || grouped));
     }
     function changeMode(next) { mode = next; customSort = null; sync(); if (mode === 'recent') table.order([]); table.page('first').draw(); }
-    modeSelect.addEventListener('change', () => { selectedView = 0; changeMode(modeSelect.value); });
+    modeSelect.addEventListener('change', () => { if (!pro && ['mine', 'stale', 'unreferenced'].includes(modeSelect.value)) { modeSelect.value = mode; showProFeature(); return; } selectedView = 0; changeMode(modeSelect.value); });
     groupCheckbox.addEventListener('change', () => { grouped = groupCheckbox.checked; selectedView = 0; sync(); table.page('first').draw(); });
     function populateViews(items) {
         savedViews = items; viewList.replaceChildren(); viewSelect.replaceChildren(new Option(t('ui_667e1f8903d8'), ''));
@@ -277,7 +279,14 @@ for (const root of document.querySelectorAll('[data-fmp-ajax]')) {
             forceRefresh = false;
             try {
                 const response = await fetch(url, {credentials: 'same-origin', cache: 'no-store', signal: controller.signal});
-                if (!response.ok) throw new Error([401, 403].includes(response.status) ? 'session_expired' : 'request_failed'); const result = await response.json();
+                if (!response.ok) {
+                    let code = [401, 403].includes(response.status) ? 'session_expired' : 'request_failed';
+                    if (response.headers.get('content-type')?.includes('application/json')) {
+                        const failure = await response.json(); if (failure.error === 'schema_setup_required') code = failure.error;
+                    }
+                    const failure = new Error(code); failure.httpStatus = response.status; throw failure;
+                }
+                const result = await response.json();
                 if (!Array.isArray(result.data) || !Array.isArray(result.categories)) throw new Error('invalid_response');
                 if (controller.signal.aborted) return; failed = false; error.hidden = true; retry.hidden = true;
                 root.classList.remove('fmp-load-failed');
@@ -306,8 +315,9 @@ for (const root of document.querySelectorAll('[data-fmp-ajax]')) {
                         }
                         marks.append(mark);
                     }
-                    if (facet.editUrl) {
+                    if (facet.editUrl || (!pro && facet.uid > 0)) {
                         const picker = popup(t('ui_5ef73c4f2d6e') + title, facet.icon, 'fmp-category-style-popup');
+                        if (!pro) proPreview(picker.summary);
                         picker.summary.replaceChildren(marks); row.append(picker.details);
                         const styleHeading = element('h3', title); styleHeading.append(proBadge(de)); picker.body.append(styleHeading);
                         const icons = element('div', undefined, 'fmp-category-icon-grid');
@@ -383,15 +393,16 @@ for (const root of document.querySelectorAll('[data-fmp-ajax]')) {
                 }
                 pendingCategoryFocus = null;
                 }
-                for (const [key, item] of mainButtons) item.querySelector('.fmp-count').textContent = String(result.summary?.[key || 'all'] ?? 0);
+                for (const [key, item] of mainButtons) item.querySelector('.fmp-count').textContent = !pro && key === 'mine' ? '' : String(result.summary?.[key || 'all'] ?? 0);
                 sync(); callback(result);
                 if (result.start !== request.start && result.recordsFiltered > 0) table.page(Math.floor(result.start / request.length)).draw('page');
             } catch (exception) {
                 if (controller.signal.aborted) return; failed = true; error.hidden = false;
                 root.classList.add('fmp-load-failed'); retry.hidden = false;
-                error.textContent = exception.message === 'session_expired'
+                error.textContent = exception.message === 'schema_setup_required' ? t('schema_setup_required') : exception.message === 'session_expired'
                     ? t('ui_a248c5608cc4')
                     : t('ui_c36acab62a56');
+                if (exception.httpStatus) error.append(document.createTextNode(' (HTTP ' + exception.httpStatus + ')'));
                 callback({draw: request.draw, recordsTotal: 0, recordsFiltered: 0, data: []});
                 root.querySelector('.dt-empty')?.replaceChildren(document.createTextNode(t('ui_4a55b0207c56')));
                 // Demo infrastructure may safely renew its overview. No Core auth
@@ -400,6 +411,7 @@ for (const root of document.querySelectorAll('[data-fmp-ajax]')) {
             }
         },
         drawCallback: function () {
+            tableElement.querySelectorAll('[data-fmp-pro-preview]:not([data-fmp-preview-bound])').forEach(control => { control.dataset.fmpPreviewBound = '1'; proPreview(control); });
             tableElement.querySelectorAll('[data-fmp-color]').forEach(mark => {
                 if (/^#[0-9a-f]{6}$/i.test(mark.dataset.fmpColor) && /^#(?:000000|ffffff)$/.test(mark.dataset.fmpInk)) {
                     mark.style.setProperty('--fmp-category-color', mark.dataset.fmpColor);
