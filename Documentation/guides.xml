@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guides xmlns="https://www.phpdoc.org/guides" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.phpdoc.org/guides ../vendor/phpdocumentor/guides-cli/resources/schema/guides.xsd" links-are-relative="true">
+ <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension" project-home="https://typo3.linkloot.io/" typo3-core-preferred="14.3" />
+ <project title="Form Manager Plus Lite" version="1.0" copyright="2026 by scheffer-webdesign and contributors" />
+</guides>

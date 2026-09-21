@@ -1,0 +1,1587 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.2">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" product-name="form_manager_plus">
+    <body>
+      <trans-unit id="title">
+        <source>Form management</source>
+        <target>Formularverwaltung</target>
+      </trans-unit>
+      <trans-unit id="uid">
+        <source>File UID</source>
+        <target>Datei-UID</target>
+      </trans-unit>
+      <trans-unit id="name">
+        <source>Form name</source>
+        <target>Formularname</target>
+      </trans-unit>
+      <trans-unit id="location">
+        <source>Location</source>
+        <target>Ort</target>
+      </trans-unit>
+      <trans-unit id="references">
+        <source>References</source>
+        <target>Referenzen</target>
+      </trans-unit>
+      <trans-unit id="actions">
+        <source>Actions</source>
+        <target>Aktionen</target>
+      </trans-unit>
+      <trans-unit id="edit">
+        <source>Edit form</source>
+        <target>Formular bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="duplicate">
+        <source>Duplicate form</source>
+        <target>Formular duplizieren</target>
+      </trans-unit>
+      <trans-unit id="delete">
+        <source>Delete form</source>
+        <target>Formular löschen</target>
+      </trans-unit>
+      <trans-unit id="history">
+        <source>History</source>
+        <target>Verlauf</target>
+      </trans-unit>
+      <trans-unit id="search">
+        <source>Search forms</source>
+        <target>Formulare suchen</target>
+      </trans-unit>
+      <trans-unit id="length">
+        <source>Entries per page</source>
+        <target>Einträge pro Seite</target>
+      </trans-unit>
+      <trans-unit id="group">
+        <source>Category</source>
+        <target>Kategorie</target>
+      </trans-unit>
+      <trans-unit id="allGroups">
+        <source>All categories</source>
+        <target>Alle Kategorien</target>
+      </trans-unit>
+      <trans-unit id="ungrouped">
+        <source>No category</source>
+        <target>Ohne Kategorie</target>
+      </trans-unit>
+      <trans-unit id="previous">
+        <source>Previous</source>
+        <target>Zurück</target>
+      </trans-unit>
+      <trans-unit id="next">
+        <source>Next</source>
+        <target>Weiter</target>
+      </trans-unit>
+      <trans-unit id="empty">
+        <source>No matching forms</source>
+        <target>Keine passenden Formulare</target>
+      </trans-unit>
+      <trans-unit id="invalid">
+        <source>Invalid form</source>
+        <target>Ungültiges Formular</target>
+      </trans-unit>
+      <trans-unit id="duplicateIdentifier">
+        <source>Duplicate identifier</source>
+        <target>Doppelte Kennung</target>
+      </trans-unit>
+      <trans-unit id="readOnly">
+        <source>Read only</source>
+        <target>Schreibgeschützt</target>
+      </trans-unit>
+      <trans-unit id="total">
+        <source>Forms</source>
+        <target>Formulare</target>
+      </trans-unit>
+      <trans-unit id="page">
+        <source>Page</source>
+        <target>Seite</target>
+      </trans-unit>
+      <trans-unit id="of">
+        <source>of</source>
+        <target>von</target>
+      </trans-unit>
+      <trans-unit id="reset">
+        <source>Reset filters</source>
+        <target>Filter zurücksetzen</target>
+      </trans-unit>
+      <trans-unit id="categoriesTitle">
+        <source>Keep your forms organised</source>
+        <target>Ordnung für deine Formulare</target>
+      </trans-unit>
+      <trans-unit id="categoriesHint">
+        <source>Select the category chip below a form name to edit its categories here. Save and close returns to this overview.</source>
+        <target>Klicke auf die Kategorie unter einem Formularnamen, um die Zuordnung hier zu bearbeiten. Speichern und schließen bringt dich zurück zur Übersicht.</target>
+      </trans-unit>
+      <trans-unit id="createCategory">
+        <source>New category</source>
+        <target>Neue Kategorie</target>
+      </trans-unit>
+      <trans-unit id="categoryStorage">
+        <source>Create category in</source>
+        <target>Kategorie anlegen in</target>
+      </trans-unit>
+      <trans-unit id="editCategories">
+        <source>Edit categories</source>
+        <target>Kategorien bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="assignCategories">
+        <source>Assign categories</source>
+        <target>Kategorien zuordnen</target>
+      </trans-unit>
+      <trans-unit id="noFileCategories">
+        <source>No file categories</source>
+        <target>Keine Datei-Kategorien</target>
+      </trans-unit>
+      <trans-unit id="editorCategories">
+        <source>Categories</source>
+        <target>Kategorien</target>
+      </trans-unit>
+      <trans-unit id="reload">
+        <source>Reload</source>
+        <target>Neu laden</target>
+      </trans-unit>
+      <trans-unit id="stateSaved">
+        <source>Your search, category, sorting and page are remembered in this browser. Reset filters restores the default view.</source>
+        <target>Suche, Kategorie, Sortierung und Seite werden in diesem Browser gespeichert. „Filter zurücksetzen“ stellt die Standardansicht wieder her.</target>
+      </trans-unit>
+      <trans-unit id="requiresJs">
+        <source>JavaScript is required to load this form list.</source>
+        <target>Zum Laden der Formularliste wird JavaScript benötigt.</target>
+      </trans-unit>
+      <trans-unit id="profile">
+        <source>Metadata</source>
+        <target>Metadaten</target>
+      </trans-unit>
+      <trans-unit id="check">
+        <source>Inspect</source>
+        <target>Prüfen</target>
+      </trans-unit>
+      <trans-unit id="transfer">
+        <source>Transfer</source>
+        <target>Transfer</target>
+      </trans-unit>
+      <trans-unit id="favorite">
+        <source>Add to favourites</source>
+        <target>Als Favorit merken</target>
+      </trans-unit>
+      <trans-unit id="unfavorite">
+        <source>Remove from favourites</source>
+        <target>Favorit entfernen</target>
+      </trans-unit>
+      <trans-unit id="modified">
+        <source>Modified</source>
+        <target>Geändert</target>
+      </trans-unit>
+      <trans-unit id="categoryAppearance">
+        <source>Form Manager Plus: appearance</source>
+        <target>Form Manager Plus: Darstellung</target>
+      </trans-unit>
+      <trans-unit id="categoryColor">
+        <source>Category colour</source>
+        <target>Kategorie-Farbe</target>
+      </trans-unit>
+      <trans-unit id="categoryColor.blue">
+        <source>Blue</source>
+        <target>Blau</target>
+      </trans-unit>
+      <trans-unit id="categoryColor.gray">
+        <source>Grey</source>
+        <target>Grau</target>
+      </trans-unit>
+      <trans-unit id="categoryColor.green">
+        <source>Green</source>
+        <target>Grün</target>
+      </trans-unit>
+      <trans-unit id="categoryColor.orange">
+        <source>Orange</source>
+        <target>Orange</target>
+      </trans-unit>
+      <trans-unit id="categoryColor.purple">
+        <source>Purple</source>
+        <target>Violett</target>
+      </trans-unit>
+      <trans-unit id="categoryColor.red">
+        <source>Red</source>
+        <target>Rot</target>
+      </trans-unit>
+      <trans-unit id="categoryColor.teal">
+        <source>Teal</source>
+        <target>Türkis</target>
+      </trans-unit>
+      <trans-unit id="categoryColorHelp">
+        <source>Optional. Leave empty for the standard appearance. Used only in Form Manager Plus.</source>
+        <target>Optional. Leer lassen für die Standarddarstellung. Wird nur in Form Manager Plus verwendet.</target>
+      </trans-unit>
+      <trans-unit id="categoryIcon">
+        <source>Category icon</source>
+        <target>Kategorie-Icon</target>
+      </trans-unit>
+      <trans-unit id="categoryIcon.bell">
+        <source>Bell</source>
+        <target>Glocke</target>
+      </trans-unit>
+      <trans-unit id="categoryIcon.briefcase">
+        <source>Briefcase</source>
+        <target>Aktenkoffer</target>
+      </trans-unit>
+      <trans-unit id="categoryIcon.calendar">
+        <source>Calendar</source>
+        <target>Kalender</target>
+      </trans-unit>
+      <trans-unit id="categoryIcon.check">
+        <source>Check mark</source>
+        <target>Haken</target>
+      </trans-unit>
+      <trans-unit id="categoryIcon.envelope">
+        <source>Envelope</source>
+        <target>Brief</target>
+      </trans-unit>
+      <trans-unit id="categoryIcon.folder">
+        <source>Folder</source>
+        <target>Ordner</target>
+      </trans-unit>
+      <trans-unit id="categoryIcon.heart">
+        <source>Heart</source>
+        <target>Herz</target>
+      </trans-unit>
+      <trans-unit id="categoryIcon.star">
+        <source>Star</source>
+        <target>Stern</target>
+      </trans-unit>
+      <trans-unit id="categoryIcon.tag">
+        <source>Tag</source>
+        <target>Etikett</target>
+      </trans-unit>
+      <trans-unit id="categoryIcon.user">
+        <source>Person</source>
+        <target>Person</target>
+      </trans-unit>
+      <trans-unit id="categoryIcon.users">
+        <source>Team</source>
+        <target>Team</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_003fd8e5671e" resname="fmp.ui_003fd8e5671e" xml:space="preserve">
+        <source>Responsible: </source>
+        <target>Verantwortlich: </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0094fd79020c" resname="fmp.ui_0094fd79020c" xml:space="preserve">
+        <source>The definition exceeds the inspection limit.</source>
+        <target>Die Definition überschreitet die Prüfgrenze.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_01c68c023ced" resname="fmp.ui_01c68c023ced" xml:space="preserve">
+        <source>No accessible categories yet.</source>
+        <target>Noch keine zugänglichen Kategorien.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_02cdaabfca80" resname="fmp.ui_02cdaabfca80" xml:space="preserve">
+        <source>Duplicate</source>
+        <target>Duplizieren</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_02d6fa50b6a2" resname="fmp.ui_02d6fa50b6a2" xml:space="preserve">
+        <source>” · </source>
+        <target>“ · </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_04c20d31ebde" resname="fmp.ui_04c20d31ebde" xml:space="preserve">
+        <source>_START_–_END_ of _TOTAL_ forms</source>
+        <target>_START_–_END_ von _TOTAL_ Formularen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_055770320a7d" resname="fmp.ui_055770320a7d" xml:space="preserve">
+        <source>Existing assignment – unavailable</source>
+        <target>Bestehende Zuordnung – nicht verfügbar</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_057173bcdb1b" resname="fmp.ui_057173bcdb1b" xml:space="preserve">
+        <source>Overwrite form</source>
+        <target>Formular überschreiben</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_05f89cf5a5cb" resname="fmp.ui_05f89cf5a5cb" xml:space="preserve">
+        <source>ZIP download started.</source>
+        <target>ZIP-Download gestartet.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_062cf59a5be4" resname="fmp.ui_062cf59a5be4" xml:space="preserve">
+        <source>Storage: </source>
+        <target>Speicherort: </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_064d0f67332b" resname="fmp.ui_064d0f67332b" xml:space="preserve">
+        <source>”. Categories and metadata are preserved.</source>
+        <target>“. Kategorien und Metadaten bleiben erhalten.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_065ccba95e68" resname="fmp.ui_065ccba95e68" xml:space="preserve">
+        <source>LinkLoot for TYPO3 (new tab)</source>
+        <target>LinkLoot für TYPO3 (neuer Tab)</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0671e97ebb73" resname="fmp.ui_0671e97ebb73" xml:space="preserve">
+        <source>Drop transfer package here</source>
+        <target>Transferdatei hier ablegen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0676784f45f1" resname="fmp.ui_0676784f45f1" xml:space="preserve">
+        <source>Share view with</source>
+        <target>Ansicht teilen mit</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_06d1ae6bcb25" resname="fmp.ui_06d1ae6bcb25" xml:space="preserve">
+        <source>Save metadata</source>
+        <target>Metadaten speichern</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_074c88b68c47" resname="fmp.ui_074c88b68c47" xml:space="preserve">
+        <source>Default colour</source>
+        <target>Standardfarbe</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0767ef858aa8" resname="fmp.ui_0767ef858aa8" xml:space="preserve">
+        <source>Delete view</source>
+        <target>Ansicht löschen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0782abe0310f" resname="fmp.ui_0782abe0310f" xml:space="preserve">
+        <source>No writable storage location available.</source>
+        <target>Kein beschreibbarer Speicherort verfügbar.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0908fc93a613" resname="fmp.ui_0908fc93a613" xml:space="preserve">
+        <source>What is this form for?</source>
+        <target>Wofür ist dieses Formular da?</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0a30a815d67d" resname="fmp.ui_0a30a815d67d" xml:space="preserve">
+        <source>Page</source>
+        <target>Seite</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0a4ac8b39328" resname="fmp.ui_0a4ac8b39328" xml:space="preserve">
+        <source>Keep your filters one click away.</source>
+        <target>Deine Filter mit einem Klick wiederfinden.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0bdbb750609c" resname="fmp.ui_0bdbb750609c" xml:space="preserve">
+        <source>First page</source>
+        <target>Erste Seite</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0d4de7fb8ca2" resname="fmp.ui_0d4de7fb8ca2" xml:space="preserve">
+        <source>Person / team (optional)</source>
+        <target>Person / Team (optional)</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0db9232b0685" resname="fmp.ui_0db9232b0685" xml:space="preserve">
+        <source>Creating copy …</source>
+        <target>Kopie wird erstellt …</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0fc155872c96" resname="fmp.ui_0fc155872c96" xml:space="preserve">
+        <source>The email subject is missing.</source>
+        <target>Der E-Mail-Betreff fehlt.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0fe1058feb9f" resname="fmp.ui_0fe1058feb9f" xml:space="preserve">
+        <source>Last modified</source>
+        <target>Zuletzt geändert</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_10afa98480f2" resname="fmp.ui_10afa98480f2" xml:space="preserve">
+        <source>Reset filters</source>
+        <target>Filter zurücksetzen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_1185ff3323eb" resname="fmp.ui_1185ff3323eb" xml:space="preserve">
+        <source>Loading forms …</source>
+        <target>Formulare werden geladen …</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_1191085ee6a9" resname="fmp.ui_1191085ee6a9" xml:space="preserve">
+        <source>Changed settings</source>
+        <target>Geänderte Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_11df411b19dd" resname="fmp.ui_11df411b19dd" xml:space="preserve">
+        <source>Grouped by category</source>
+        <target>Nach Kategorie gruppiert</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_1208ec01f223" resname="fmp.ui_1208ec01f223" xml:space="preserve">
+        <source>Previous page</source>
+        <target>Vorige Seite</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_14d33bd014e6" resname="fmp.ui_14d33bd014e6" xml:space="preserve">
+        <source>Unassigned</source>
+        <target>Nicht zugewiesen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_1503916a2ab2" resname="fmp.ui_1503916a2ab2" xml:space="preserve">
+        <source>Tag</source>
+        <target>Etikett</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_183abc3e1a89" resname="fmp.ui_183abc3e1a89" xml:space="preserve">
+        <source>Removed elements</source>
+        <target>Entfernte Elemente</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_19766ed6ccb2" resname="fmp.ui_19766ed6ccb2" xml:space="preserve">
+        <source>Cancel</source>
+        <target>Abbrechen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_19f0dd9ac406" resname="fmp.ui_19f0dd9ac406" xml:space="preserve">
+        <source>Bulk actions</source>
+        <target>Sammelaktionen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_19fcdfdee7f1" resname="fmp.ui_19fcdfdee7f1" xml:space="preserve">
+        <source>Form name</source>
+        <target>Formularname</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_1a675bfd38c3" resname="fmp.ui_1a675bfd38c3" xml:space="preserve">
+        <source>Change file</source>
+        <target>Datei ändern</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_1ab1e121c0df" resname="fmp.ui_1ab1e121c0df" xml:space="preserve">
+        <source>New category</source>
+        <target>Neue Kategorie</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_1cd2b4bc2090" resname="fmp.ui_1cd2b4bc2090" xml:space="preserve">
+        <source>Potential credential: remove it before transfer and configure it separately in the target project.</source>
+        <target>Möglicher Zugangswert: vor dem Transfer entfernen und im Zielprojekt separat konfigurieren.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_1ff57a29d7c9" resname="fmp.ui_1ff57a29d7c9" xml:space="preserve">
+        <source>Next</source>
+        <target>Weiter</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_204cc243c021" resname="fmp.ui_204cc243c021" xml:space="preserve">
+        <source>This import destination is unavailable or not permitted.</source>
+        <target>Dieses Importziel ist nicht mehr verfügbar oder nicht freigegeben.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_204d6612d949" resname="fmp.ui_204d6612d949" xml:space="preserve">
+        <source>Search forms …</source>
+        <target>Formulare suchen …</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2115387503f6" resname="fmp.ui_2115387503f6" xml:space="preserve">
+        <source>Save view</source>
+        <target>Ansicht speichern</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2248a9fb8cca" resname="fmp.ui_2248a9fb8cca" xml:space="preserve">
+        <source>Review &amp; import</source>
+        <target>Prüfen &amp; importieren</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_23fa6af3780a" resname="fmp.ui_23fa6af3780a" xml:space="preserve">
+        <source>No accessible usage locations found.</source>
+        <target>Keine zugänglichen Verwendungsstellen gefunden.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_26ad300a69a3" resname="fmp.ui_26ad300a69a3" xml:space="preserve">
+        <source>Overwrite matching identifier</source>
+        <target>Bei gleichem Identifier überschreiben</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_26b864088fa3" resname="fmp.ui_26b864088fa3" xml:space="preserve">
+        <source>Added elements</source>
+        <target>Neue Elemente</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_26bfbd5c83f9" resname="fmp.ui_26bfbd5c83f9" xml:space="preserve">
+        <source>No file selected</source>
+        <target>Noch keine Datei ausgewählt</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2742276525ff" resname="fmp.ui_2742276525ff" xml:space="preserve">
+        <source>Project-specific path, storage or record: review its mapping.</source>
+        <target>Projektabhängiger Pfad, Speicher oder Datensatz: Zuordnung prüfen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_292c06f0045a" resname="fmp.ui_292c06f0045a" xml:space="preserve">
+        <source>Category</source>
+        <target>Kategorie</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_293d404a500f" resname="fmp.ui_293d404a500f" xml:space="preserve">
+        <source>Destination</source>
+        <target>Ziel</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_29cae1032956" resname="fmp.ui_29cae1032956" xml:space="preserve">
+        <source>A meaningful label is missing.</source>
+        <target>Eine verständliche Beschriftung fehlt.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2a5cd31bc9e8" resname="fmp.ui_2a5cd31bc9e8" xml:space="preserve">
+        <source>: Reverse order</source>
+        <target>: Sortierung umkehren</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2beb528ebbdd" resname="fmp.ui_2beb528ebbdd" xml:space="preserve">
+        <source>Import a form from a transfer package.</source>
+        <target>Ein Formular aus einer Transferdatei übernehmen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2c6d8d9c7563" resname="fmp.ui_2c6d8d9c7563" xml:space="preserve">
+        <source>Open copy</source>
+        <target>Kopie öffnen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2cff9baabf56" resname="fmp.ui_2cff9baabf56" xml:space="preserve">
+        <source>Import</source>
+        <target>Importieren</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2da1823415ec" resname="fmp.ui_2da1823415ec" xml:space="preserve">
+        <source>Category: </source>
+        <target>Kategorie: </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2e0e960ab320" resname="fmp.ui_2e0e960ab320" xml:space="preserve">
+        <source>Form</source>
+        <target>Formular</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2f799be3086f" resname="fmp.ui_2f799be3086f" xml:space="preserve">
+        <source>No matching forms. Adjust your search or filters.</source>
+        <target>Keine passenden Formulare. Suche oder Filter anpassen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_30ee2266f3d0" resname="fmp.ui_30ee2266f3d0" xml:space="preserve">
+        <source>Preparing preview …</source>
+        <target>Vorschau wird erstellt …</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_31e392d1c037" resname="fmp.ui_31e392d1c037" xml:space="preserve">
+        <source>Apply</source>
+        <target>Ausführen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_332f32f0895d" resname="fmp.ui_332f32f0895d" xml:space="preserve">
+        <source>Form identifier</source>
+        <target>Formular-Identifier</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_3363e5f143b7" resname="fmp.ui_3363e5f143b7" xml:space="preserve">
+        <source>Search: </source>
+        <target>Suche: </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_364ec23bbacf" resname="fmp.ui_364ec23bbacf" xml:space="preserve">
+        <source>Form: </source>
+        <target>Formular: </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_377f88209427" resname="fmp.ui_377f88209427" xml:space="preserve">
+        <source>Processing …</source>
+        <target>Wird ausgeführt …</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_3802c445c835" resname="fmp.ui_3802c445c835" xml:space="preserve">
+        <source>Available users depend on your TYPO3 user permissions.</source>
+        <target>Die Auswahl richtet sich nach deinen TYPO3-Benutzerberechtigungen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_3808d8352aad" resname="fmp.ui_3808d8352aad" xml:space="preserve">
+        <source>You do not have access to this form.</source>
+        <target>Keine Berechtigung für dieses Formular.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_3bfc972e9d34" resname="fmp.ui_3bfc972e9d34" xml:space="preserve">
+        <source>You can save up to 20 views.</source>
+        <target>Du kannst bis zu 20 Ansichten speichern.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_3c8e8d870142" resname="fmp.ui_3c8e8d870142" xml:space="preserve">
+        <source>All changes saved.</source>
+        <target>Alle Änderungen gespeichert.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_3cf74cc75cd2" resname="fmp.ui_3cf74cc75cd2" xml:space="preserve">
+        <source>Element structure or order changed</source>
+        <target>Elementstruktur oder Reihenfolge geändert</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_3ff97c7a8428" resname="fmp.ui_3ff97c7a8428" xml:space="preserve">
+        <source>Review preview</source>
+        <target>Vorschau prüfen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_40c414d50c39" resname="fmp.ui_40c414d50c39" xml:space="preserve">
+        <source>The redirect destination is missing.</source>
+        <target>Beim Redirect fehlt das Ziel.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4154c9515f3c" resname="fmp.ui_4154c9515f3c" xml:space="preserve">
+        <source>: Sort</source>
+        <target>: Sortieren</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_43e26fda12d9" resname="fmp.ui_43e26fda12d9" xml:space="preserve">
+        <source>The email finisher has no recipients.</source>
+        <target>Beim E-Mail-Finisher fehlen Empfänger.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_44c12212e271" resname="fmp.ui_44c12212e271" xml:space="preserve">
+        <source>Select transfer package</source>
+        <target>Transferdatei auswählen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4543708d1196" resname="fmp.ui_4543708d1196" xml:space="preserve">
+        <source>Last page</source>
+        <target>Letzte Seite</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4551ca2a37cb" resname="fmp.ui_4551ca2a37cb" xml:space="preserve">
+        <source>Database finisher: review tables, fields and access in this project.</source>
+        <target>Datenbank-Finisher: Tabellen, Felder und Zugriffe im Projekt prüfen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4615ca67340c" resname="fmp.ui_4615ca67340c" xml:space="preserve">
+        <source>Invalid form definition</source>
+        <target>Ungültige Formulardefinition</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_465b5091f3a6" resname="fmp.ui_465b5091f3a6" xml:space="preserve">
+        <source>Checking existing forms …</source>
+        <target>Vorhandene Formulare werden geprüft …</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_470e7ee2a579" resname="fmp.ui_470e7ee2a579" xml:space="preserve">
+        <source>Discard unsaved changes?</source>
+        <target>Ungespeicherte Änderungen verwerfen?</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_47a1436c7090" resname="fmp.ui_47a1436c7090" xml:space="preserve">
+        <source>Envelope</source>
+        <target>Brief</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_49027dc6ed7e" resname="fmp.ui_49027dc6ed7e" xml:space="preserve">
+        <source>Keep your search, filters and sort order for later.</source>
+        <target>Suche, Filter und Sortierung für später merken.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4a55b0207c56" resname="fmp.ui_4a55b0207c56" xml:space="preserve">
+        <source>Loading failed.</source>
+        <target>Laden fehlgeschlagen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4c118f59f8b5" resname="fmp.ui_4c118f59f8b5" xml:space="preserve">
+        <source>No permitted import destination is available.</source>
+        <target>Kein freigegebenes Importziel verfügbar.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4ca48b4230a5" resname="fmp.ui_4ca48b4230a5" xml:space="preserve">
+        <source>Confirm import</source>
+        <target>Import bestätigen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4f3484a983c5" resname="fmp.ui_4f3484a983c5" xml:space="preserve">
+        <source>My forms</source>
+        <target>Meine Formulare</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4f801f3d6fae" resname="fmp.ui_4f801f3d6fae" xml:space="preserve">
+        <source>Metadata saved.</source>
+        <target>Metadaten gespeichert.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4fb6a31f6868" resname="fmp.ui_4fb6a31f6868" xml:space="preserve">
+        <source>Copy purpose, person / team and internal notes</source>
+        <target>Zweck, Person / Team und interne Hinweise übernehmen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_50009ce1da4d" resname="fmp.ui_50009ce1da4d" xml:space="preserve">
+        <source>File</source>
+        <target>Datei</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_523cfcb59b78" resname="fmp.ui_523cfcb59b78" xml:space="preserve">
+        <source>Check mark</source>
+        <target>Haken</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_546d10379d07" resname="fmp.ui_546d10379d07" xml:space="preserve">
+        <source>The copy was created. Categories or metadata could not be fully copied. Open the copy to review them.</source>
+        <target>Die Kopie wurde erstellt. Kategorien oder Metadaten konnten nicht vollständig übernommen werden. Öffne die Kopie zur Prüfung.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_5562eb882371" resname="fmp.ui_5562eb882371" xml:space="preserve">
+        <source>Changed elements</source>
+        <target>Geänderte Elemente</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_55723eda7bd5" resname="fmp.ui_55723eda7bd5" xml:space="preserve">
+        <source>Dependencies changed. Please preview again.</source>
+        <target>Die Voraussetzungen haben sich geändert. Bitte erneut prüfen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_560a44e224c0" resname="fmp.ui_560a44e224c0" xml:space="preserve">
+        <source>Category assignment is not editable here.</source>
+        <target>Kategoriezuordnung hier nicht bearbeitbar.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_5720b523333c" resname="fmp.ui_5720b523333c" xml:space="preserve">
+        <source>Review recipients and sender before using this form in the target project.</source>
+        <target>Empfänger und Absender vor dem Einsatz im Zielprojekt prüfen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_572ffd186209" resname="fmp.ui_572ffd186209" xml:space="preserve">
+        <source>View name</source>
+        <target>Name der Ansicht</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_58cefb489b1a" resname="fmp.ui_58cefb489b1a" xml:space="preserve">
+        <source>Reset all filters</source>
+        <target>Alle Filter zurücksetzen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_591d9011ca2f" resname="fmp.ui_591d9011ca2f" xml:space="preserve">
+        <source>Person / team</source>
+        <target>Person / Team</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_5928602a946a" resname="fmp.ui_5928602a946a" xml:space="preserve">
+        <source>Select file</source>
+        <target>Datei auswählen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_5985039f106d" resname="fmp.ui_5985039f106d" xml:space="preserve">
+        <source>Team</source>
+        <target>Team</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_5a574d47bb6a" resname="fmp.ui_5a574d47bb6a" xml:space="preserve">
+        <source>No detected references</source>
+        <target>Keine gefundenen Referenzen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_5b700343aea6" resname="fmp.ui_5b700343aea6" xml:space="preserve">
+        <source>Existing assignment – user unavailable</source>
+        <target>Bestehende Zuordnung – Benutzer nicht verfügbar</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_5d4ca22e7798" resname="fmp.ui_5d4ca22e7798" xml:space="preserve">
+        <source> (PHP ZIP unavailable)</source>
+        <target> (PHP-ZIP fehlt)</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_5ef73c4f2d6e" resname="fmp.ui_5ef73c4f2d6e" xml:space="preserve">
+        <source>Change icon and colour: </source>
+        <target>Icon und Farbe ändern: </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_5f198db25a77" resname="fmp.ui_5f198db25a77" xml:space="preserve">
+        <source>All owners</source>
+        <target>Alle Zuständigen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_6007db63e18e" resname="fmp.ui_6007db63e18e" xml:space="preserve">
+        <source>Person</source>
+        <target>Person</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_602b8b4eb49f" resname="fmp.ui_602b8b4eb49f" xml:space="preserve">
+        <source>Select: </source>
+        <target>Auswählen: </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_605a73fff0fe" resname="fmp.ui_605a73fff0fe" xml:space="preserve">
+        <source>The operation could not be completed. Please try again.</source>
+        <target>Der Vorgang konnte nicht abgeschlossen werden. Bitte erneut versuchen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_6076934f99bd" resname="fmp.ui_6076934f99bd" xml:space="preserve">
+        <source>Page </source>
+        <target>Seite </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_607cd1a075db" resname="fmp.ui_607cd1a075db" xml:space="preserve">
+        <source>Choose one or more TYPO3 categories. You can also create a new category here.</source>
+        <target>Wähle eine oder mehrere TYPO3-Kategorien. Bei Bedarf kannst du hier eine neue Kategorie erstellen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_610200a390f7" resname="fmp.ui_610200a390f7" xml:space="preserve">
+        <source>Filter categories</source>
+        <target>Kategorien filtern</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_6153545856fc" resname="fmp.ui_6153545856fc" xml:space="preserve">
+        <source>Saved together with the form.</source>
+        <target>Wird mit dem Formular gespeichert.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_61951694e361" resname="fmp.ui_61951694e361" xml:space="preserve">
+        <source>Review this page destination in the project.</source>
+        <target>Das Seitenziel muss im Projekt geprüft werden.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_63d2643b059e" resname="fmp.ui_63d2643b059e" xml:space="preserve">
+        <source>Variants</source>
+        <target>Varianten</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_64358b7a8780" resname="fmp.ui_64358b7a8780" xml:space="preserve">
+        <source>The identifier must start with a letter and contain only letters, numbers, - and _.</source>
+        <target>Die Kennung muss mit einem Buchstaben beginnen und darf Buchstaben, Zahlen, - und _ enthalten.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_64cff1319d2f" resname="fmp.ui_64cff1319d2f" xml:space="preserve">
+        <source>Action</source>
+        <target>Aktion</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_667e1f8903d8" resname="fmp.ui_667e1f8903d8" xml:space="preserve">
+        <source>New view</source>
+        <target>Neue Ansicht</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_66d1aaf218aa" resname="fmp.ui_66d1aaf218aa" xml:space="preserve">
+        <source>No static issues found.</source>
+        <target>Keine statischen Auffälligkeiten gefunden.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_67262c3f4864" resname="fmp.ui_67262c3f4864" xml:space="preserve">
+        <source>Choose a Form Manager Plus transfer package.</source>
+        <target>Bitte eine Form-Manager-Plus-Transferdatei auswählen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_676db1fed1b4" resname="fmp.ui_676db1fed1b4" xml:space="preserve">
+        <source>Finishers</source>
+        <target>Finisher</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_68e464db8f84" resname="fmp.ui_68e464db8f84" xml:space="preserve">
+        <source>I reviewed the preview and want to create a new form.</source>
+        <target>Ich habe die Vorschau geprüft und möchte ein neues Formular erstellen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_69824d3b0e70" resname="fmp.ui_69824d3b0e70" xml:space="preserve">
+        <source>References</source>
+        <target>Referenzen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_6a5447a0bdbe" resname="fmp.ui_6a5447a0bdbe" xml:space="preserve">
+        <source>HTML was sanitized. The preview contains the sanitized definition.</source>
+        <target>HTML wurde bereinigt. Die bereinigte Definition steht in der Vorschau.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_6c0c4d6002c3" resname="fmp.ui_6c0c4d6002c3" xml:space="preserve">
+        <source>Not accessible</source>
+        <target>Nicht zugänglich</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_6d0db0ecf197" resname="fmp.ui_6d0db0ecf197" xml:space="preserve">
+        <source>Responsible backend user</source>
+        <target>Verantwortlicher Backend-Benutzer</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_6e2fd7e74b3a" resname="fmp.ui_6e2fd7e74b3a" xml:space="preserve">
+        <source>This form prototype is unavailable here.</source>
+        <target>Das Formular-Prototyp-Paket ist hier nicht verfügbar.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_6ecabfd5d7e9" resname="fmp.ui_6ecabfd5d7e9" xml:space="preserve">
+        <source>Import forms from a transfer package, with a preview before applying changes.</source>
+        <target>Formulare aus einer Transferdatei übernehmen – mit Vorschau vor dem Import.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_6fc2a6312846" resname="fmp.ui_6fc2a6312846" xml:space="preserve">
+        <source>Form library</source>
+        <target>Formularbibliothek</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7070160fd97b" resname="fmp.ui_7070160fd97b" xml:space="preserve">
+        <source>Metadata not saved</source>
+        <target>Metadaten nicht gespeichert</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_71aacd3ac702" resname="fmp.ui_71aacd3ac702" xml:space="preserve">
+        <source>Import form</source>
+        <target>Formular importieren</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_71d85fc11f51" resname="fmp.ui_71d85fc11f51" xml:space="preserve">
+        <source>No accessible form matches this identifier. Please import as a new form.</source>
+        <target>Kein zugängliches Formular mit diesem Identifier gefunden. Bitte als neues Formular importieren.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7203c2b3dad3" resname="fmp.ui_7203c2b3dad3" xml:space="preserve">
+        <source>Structure</source>
+        <target>Struktur</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_721e3248163c" resname="fmp.ui_721e3248163c" xml:space="preserve">
+        <source>Match: “</source>
+        <target>Treffer: „</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_73108b7d00e0" resname="fmp.ui_73108b7d00e0" xml:space="preserve">
+        <source>Check match again</source>
+        <target>Treffer erneut prüfen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_738baad4b453" resname="fmp.ui_738baad4b453" xml:space="preserve">
+        <source>Search categories …</source>
+        <target>Kategorien suchen …</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_73a14fb1a3f0" resname="fmp.ui_73a14fb1a3f0" xml:space="preserve">
+        <source>”.</source>
+        <target>“ überschreiben.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_73ce79353801" resname="fmp.ui_73ce79353801" xml:space="preserve">
+        <source>Saved. More recent changes are still unsaved.</source>
+        <target>Gespeichert. Neuere Änderungen sind noch offen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_73ddd937c98b" resname="fmp.ui_73ddd937c98b" xml:space="preserve">
+        <source>Category name</source>
+        <target>Kategoriename</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_74a883a037bc" resname="fmp.ui_74a883a037bc" xml:space="preserve">
+        <source>Settings</source>
+        <target>Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_74ccd4330384" resname="fmp.ui_74ccd4330384" xml:space="preserve">
+        <source>Folder</source>
+        <target>Ordner</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7551a0eca74e" resname="fmp.ui_7551a0eca74e" xml:space="preserve">
+        <source>Continue to settings</source>
+        <target>Weiter zu den Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7569c02cadc2" resname="fmp.ui_7569c02cadc2" xml:space="preserve">
+        <source>Pro feature</source>
+        <target>Pro-Funktion</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_76900f1bfd16" resname="fmp.ui_76900f1bfd16" xml:space="preserve">
+        <source>Back</source>
+        <target>Zurück</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7701c214f966" resname="fmp.ui_7701c214f966" xml:space="preserve">
+        <source> — no write permission. Overwrite is unavailable.</source>
+        <target> — keine Schreibberechtigung. Überschreiben ist nicht verfügbar.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_770660f054e3" resname="fmp.ui_770660f054e3" xml:space="preserve">
+        <source>This finisher cannot be imported automatically for security reasons.</source>
+        <target>Dieser Finisher wird aus Sicherheitsgründen nicht automatisch importiert.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_770af9d18037" resname="fmp.ui_770af9d18037" xml:space="preserve">
+        <source>Heart</source>
+        <target>Herz</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7794db85de52" resname="fmp.ui_7794db85de52" xml:space="preserve">
+        <source>Select at least one category.</source>
+        <target>Bitte mindestens eine Kategorie auswählen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_78e7771b8b46" resname="fmp.ui_78e7771b8b46" xml:space="preserve">
+        <source>Orange</source>
+        <target>Orange</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_79c86a1da92e" resname="fmp.ui_79c86a1da92e" xml:space="preserve">
+        <source>Saved. More recent input is still unsaved.</source>
+        <target>Gespeichert. Neuere Eingaben sind noch nicht gespeichert.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7a7ac3e3fd7e" resname="fmp.ui_7a7ac3e3fd7e" xml:space="preserve">
+        <source>No forms yet.</source>
+        <target>Noch keine Formulare vorhanden.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7a96160fc1db" resname="fmp.ui_7a96160fc1db" xml:space="preserve">
+        <source>All forms</source>
+        <target>Alle Formulare</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7b709e8ccb99" resname="fmp.ui_7b709e8ccb99" xml:space="preserve">
+        <source>This form information changed in the meantime. Reload it before applying your changes.</source>
+        <target>Die Formularinformationen wurden zwischenzeitlich geändert. Bitte neu laden und deine Änderung erneut übernehmen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7c29b2ec4ad2" resname="fmp.ui_7c29b2ec4ad2" xml:space="preserve">
+        <source>This form contains no steps.</source>
+        <target>Das Formular enthält keine Schritte.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7c7623328341" resname="fmp.ui_7c7623328341" xml:space="preserve">
+        <source>Review in form →</source>
+        <target>Im Formular prüfen →</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7ca7140b565b" resname="fmp.ui_7ca7140b565b" xml:space="preserve">
+        <source>Review overwrite</source>
+        <target>Überschreiben prüfen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7d1c756d8b5e" resname="fmp.ui_7d1c756d8b5e" xml:space="preserve">
+        <source>Review new form</source>
+        <target>Neues Formular prüfen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7d465fb9b931" resname="fmp.ui_7d465fb9b931" xml:space="preserve">
+        <source>Purple</source>
+        <target>Violett</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7d9eb7acb13e" resname="fmp.ui_7d9eb7acb13e" xml:space="preserve">
+        <source>Close</source>
+        <target>Schließen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7da4871a2c4c" resname="fmp.ui_7da4871a2c4c" xml:space="preserve">
+        <source>Overwrites the matching form “</source>
+        <target>Überschreibt das gefundene Formular „</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7ee985f230aa" resname="fmp.ui_7ee985f230aa" xml:space="preserve">
+        <source>An identifier is missing.</source>
+        <target>Eine Kennung fehlt.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_804beb8dde3b" resname="fmp.ui_804beb8dde3b" xml:space="preserve">
+        <source>Person / team contains</source>
+        <target>Person / Team enthält</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_80796358926c" resname="fmp.ui_80796358926c" xml:space="preserve">
+        <source>Select this page</source>
+        <target>Diese Seite auswählen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_80d51928255c" resname="fmp.ui_80d51928255c" xml:space="preserve">
+        <source> failed. These remain selected; review permissions and concurrent changes.</source>
+        <target> fehlgeschlagen. Diese bleiben ausgewählt; bitte Rechte und zwischenzeitliche Änderungen prüfen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_81184cb517ed" resname="fmp.ui_81184cb517ed" xml:space="preserve">
+        <source>Saved views</source>
+        <target>Gespeicherte Ansichten</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8190af1abdc3" resname="fmp.ui_8190af1abdc3" xml:space="preserve">
+        <source>The existing form definition will be replaced. Changes also affect existing embeds. Categories and metadata are preserved.</source>
+        <target>Die vorhandene Formulardefinition wird ersetzt. Änderungen wirken sich auch auf bestehende Einbindungen aus. Kategorien und Metadaten bleiben erhalten.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_83037aeb42d4" resname="fmp.ui_83037aeb42d4" xml:space="preserve">
+        <source>Set responsible user</source>
+        <target>Verantwortlichen setzen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_84507c4d2cec" resname="fmp.ui_84507c4d2cec" xml:space="preserve">
+        <source>After: </source>
+        <target>Nachher: </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_850f5142a055" resname="fmp.ui_850f5142a055" xml:space="preserve">
+        <source>An available identifier will be assigned. Existing forms remain unchanged.</source>
+        <target>Eine freie Kennung wird vergeben. Vorhandene Formulare bleiben unverändert.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_858451263b1b" resname="fmp.ui_858451263b1b" xml:space="preserve">
+        <source>Forms</source>
+        <target>Formulare</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8702eaf12c84" resname="fmp.ui_8702eaf12c84" xml:space="preserve">
+        <source>The form definition cannot be read. Inspect and repair it first.</source>
+        <target>Die Formulardefinition kann nicht gelesen werden. Bitte zuerst prüfen und reparieren.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_873512a948bc" resname="fmp.ui_873512a948bc" xml:space="preserve">
+        <source>Change settings</source>
+        <target>Einstellungen ändern</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8753e7693e86" resname="fmp.ui_8753e7693e86" xml:space="preserve">
+        <source>Preparing export …</source>
+        <target>Export wird vorbereitet …</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_87bb59ba2f92" resname="fmp.ui_87bb59ba2f92" xml:space="preserve">
+        <source>Workspace</source>
+        <target>Arbeitsbereich</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_890953ed89b0" resname="fmp.ui_890953ed89b0" xml:space="preserve">
+        <source>No forms</source>
+        <target>Keine Formulare</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8a85a235d9ac" resname="fmp.ui_8a85a235d9ac" xml:space="preserve">
+        <source>A configured email address is invalid.</source>
+        <target>Eine fest eingetragene E-Mail-Adresse ist ungültig.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8a964cc02a35" resname="fmp.ui_8a964cc02a35" xml:space="preserve">
+        <source>No changes recorded yet. History starts when this feature is enabled.</source>
+        <target>Noch keine Änderungen aufgezeichnet. Der Verlauf beginnt mit der Aktivierung dieser Funktion.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8be4459422e6" resname="fmp.ui_8be4459422e6" xml:space="preserve">
+        <source>This identifier already exists. Import will generate a new available identifier.</source>
+        <target>Diese Kennung existiert bereits. Beim Import wird eine neue freie Kennung erzeugt.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8c8bb6c32e52" resname="fmp.ui_8c8bb6c32e52" xml:space="preserve">
+        <source> updated. </source>
+        <target> aktualisiert. </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8cbf73cd9f5d" resname="fmp.ui_8cbf73cd9f5d" xml:space="preserve">
+        <source>The root type must be “Form”.</source>
+        <target>Der Wurzeltyp muss „Form“ sein.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8d61a1d04fd6" resname="fmp.ui_8d61a1d04fd6" xml:space="preserve">
+        <source>Back to the form</source>
+        <target>Zurück zum Formular</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8e80b2b4b22a" resname="fmp.ui_8e80b2b4b22a" xml:space="preserve">
+        <source>Bell</source>
+        <target>Glocke</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8e905fad1013" resname="fmp.ui_8e905fad1013" xml:space="preserve">
+        <source>The sender address is missing.</source>
+        <target>Die Absenderadresse fehlt.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8fc5046575ec" resname="fmp.ui_8fc5046575ec" xml:space="preserve">
+        <source>This finisher is not registered.</source>
+        <target>Dieser Finisher ist nicht registriert.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_91080b50922e" resname="fmp.ui_91080b50922e" xml:space="preserve">
+        <source>Team: </source>
+        <target>Team: </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_91f0d489c296" resname="fmp.ui_91f0d489c296" xml:space="preserve">
+        <source>No finisher is configured. Check what should happen after submission.</source>
+        <target>Kein Finisher eingerichtet. Prüfe, was nach dem Absenden passieren soll.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_9204c82a5d2b" resname="fmp.ui_9204c82a5d2b" xml:space="preserve">
+        <source>Shared information for authorised team members. Do not store passwords or submissions here.</source>
+        <target>Gemeinsame Informationen für berechtigte Teammitglieder. Bitte keine Passwörter oder Einsendungen hinterlegen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_92114e3e22d5" resname="fmp.ui_92114e3e22d5" xml:space="preserve">
+        <source>Uncategorised</source>
+        <target>Ohne Kategorie</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_921ccf77df84" resname="fmp.ui_921ccf77df84" xml:space="preserve">
+        <source>Categories saved.</source>
+        <target>Kategorien gespeichert.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_938013c2eb9d" resname="fmp.ui_938013c2eb9d" xml:space="preserve">
+        <source>Bulk actions · PRO</source>
+        <target>Sammelaktionen · PRO</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_93e70268d678" resname="fmp.ui_93e70268d678" xml:space="preserve">
+        <source>A form element is invalid.</source>
+        <target>Ein Formularelement ist ungültig.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_943ca1a76959" resname="fmp.ui_943ca1a76959" xml:space="preserve">
+        <source>_MENU_ per page</source>
+        <target>_MENU_ pro Seite</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_959bab56b1f0" resname="fmp.ui_959bab56b1f0" xml:space="preserve">
+        <source>Please check your input.</source>
+        <target>Bitte prüfe deine Eingaben.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_964de7c92efe" resname="fmp.ui_964de7c92efe" xml:space="preserve">
+        <source>Change history</source>
+        <target>Änderungsverlauf</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_982a7984a6a4" resname="fmp.ui_982a7984a6a4" xml:space="preserve">
+        <source>Create copy</source>
+        <target>Kopie erstellen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_99214b4cde0f" resname="fmp.ui_99214b4cde0f" xml:space="preserve">
+        <source>The file does not contain valid JSON.</source>
+        <target>Die Datei enthält kein gültiges JSON.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_99ac11a5705d" resname="fmp.ui_99ac11a5705d" xml:space="preserve">
+        <source>This element type is not registered in the target project.</source>
+        <target>Dieser Elementtyp ist im Zielprojekt nicht registriert.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_9ab7fb6fea31" resname="fmp.ui_9ab7fb6fea31" xml:space="preserve">
+        <source>Filters and actions</source>
+        <target>Filter und Aktionen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_9d238c920ef8" resname="fmp.ui_9d238c920ef8" xml:space="preserve">
+        <source>Select multiple</source>
+        <target>Mehrfachauswahl</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_9dd213621004" resname="fmp.ui_9dd213621004" xml:space="preserve">
+        <source>Assign category</source>
+        <target>Kategorie zuordnen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_9dfe01782bf9" resname="fmp.ui_9dfe01782bf9" xml:space="preserve">
+        <source>All storage locations</source>
+        <target>Alle Speicherorte</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_9e89d4aa8ce4" resname="fmp.ui_9e89d4aa8ce4" xml:space="preserve">
+        <source>The import completed successfully.</source>
+        <target>Der Import wurde erfolgreich abgeschlossen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_9eddf573cb50" resname="fmp.ui_9eddf573cb50" xml:space="preserve">
+        <source>Metadata</source>
+        <target>Metadaten</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a037e5315ec8" resname="fmp.ui_a037e5315ec8" xml:space="preserve">
+        <source>Copy name</source>
+        <target>Name der Kopie</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a151ceb1711a" resname="fmp.ui_a151ceb1711a" xml:space="preserve">
+        <source>First</source>
+        <target>Erste</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a248c5608cc4" resname="fmp.ui_a248c5608cc4" xml:space="preserve">
+        <source>The session changed or access expired. Please reload the backend.</source>
+        <target>Die Sitzung wurde erneuert oder der Zugriff ist abgelaufen. Bitte das Backend neu laden.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a2bcd39a7851" resname="fmp.ui_a2bcd39a7851" xml:space="preserve">
+        <source>Before: </source>
+        <target>Vorher: </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a3f530fd1cb1" resname="fmp.ui_a3f530fd1cb1" xml:space="preserve">
+        <source>New form</source>
+        <target>Neues Formular</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a3fc77617024" resname="fmp.ui_a3fc77617024" xml:space="preserve">
+        <source>This feature requires Form Manager Plus Pro.</source>
+        <target>Diese Funktion benötigt Form Manager Plus Pro.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a47080aec4fe" resname="fmp.ui_a47080aec4fe" xml:space="preserve">
+        <source>Destination storage</source>
+        <target>Zielspeicher</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a57b08a480b8" resname="fmp.ui_a57b08a480b8" xml:space="preserve">
+        <source>Previous</source>
+        <target>Zurück</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a59e289477fe" resname="fmp.ui_a59e289477fe" xml:space="preserve">
+        <source>Storage location</source>
+        <target>Speicherort</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a5a0ab823c4b" resname="fmp.ui_a5a0ab823c4b" xml:space="preserve">
+        <source>A view with this name already exists.</source>
+        <target>Eine Ansicht mit diesem Namen existiert bereits.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a662dce97a12" resname="fmp.ui_a662dce97a12" xml:space="preserve">
+        <source>Open form</source>
+        <target>Formular öffnen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a75197fe0dfd" resname="fmp.ui_a75197fe0dfd" xml:space="preserve">
+        <source>This validator is not registered.</source>
+        <target>Dieser Validator ist nicht registriert.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a86c3b3062e2" resname="fmp.ui_a86c3b3062e2" xml:space="preserve">
+        <source>(filtered from _MAX_)</source>
+        <target>(gefiltert aus _MAX_)</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a87964b69298" resname="fmp.ui_a87964b69298" xml:space="preserve">
+        <source>Import mode</source>
+        <target>Importmodus</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_aada20767063" resname="fmp.ui_aada20767063" xml:space="preserve">
+        <source>Import blocked. Correct the errors in the file.</source>
+        <target>Import blockiert. Bitte die Fehler in der Datei beheben.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ab2ddc803211" resname="fmp.ui_ab2ddc803211" xml:space="preserve">
+        <source>Back to the form list</source>
+        <target>Zur Formularliste</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ab8282bb6517" resname="fmp.ui_ab8282bb6517" xml:space="preserve">
+        <source>Purpose / summary</source>
+        <target>Zweck / Kurzbeschreibung</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ac41b0f9427d" resname="fmp.ui_ac41b0f9427d" xml:space="preserve">
+        <source>Configure import</source>
+        <target>Import einstellen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ac8991ef0101" resname="fmp.ui_ac8991ef0101" xml:space="preserve">
+        <source>Load more</source>
+        <target>Weitere laden</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_acc0626438c4" resname="fmp.ui_acc0626438c4" xml:space="preserve">
+        <source>Recently edited</source>
+        <target>Zuletzt bearbeitet</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ad11a2a0d070" resname="fmp.ui_ad11a2a0d070" xml:space="preserve">
+        <source>Save assignment</source>
+        <target>Zuordnung speichern</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ae10e8899978" resname="fmp.ui_ae10e8899978" xml:space="preserve">
+        <source>Loading history …</source>
+        <target>Verlauf wird geladen …</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ae661efc63d6" resname="fmp.ui_ae661efc63d6" xml:space="preserve">
+        <source>No detected references does not automatically mean unused. Review dynamic integrations. Forms are never deleted automatically.</source>
+        <target>Keine gefundenen Referenzen bedeutet nicht automatisch ungenutzt. Dynamische Einbindungen bitte prüfen. Es werden keine Formulare automatisch gelöscht.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b09c73d9d3f8" resname="fmp.ui_b09c73d9d3f8" xml:space="preserve">
+        <source>Choose file</source>
+        <target>Datei auswählen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b1ceca2a6ea4" resname="fmp.ui_b1ceca2a6ea4" xml:space="preserve">
+        <source>Export as ZIP</source>
+        <target>Als ZIP exportieren</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b2a146d42dae" resname="fmp.ui_b2a146d42dae" xml:space="preserve">
+        <source>.fmp.json · maximum 2 MB</source>
+        <target>.fmp.json · maximal 2 MB</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b3bd12d950d8" resname="fmp.ui_b3bd12d950d8" xml:space="preserve">
+        <source>Creates a new form. Existing forms remain unchanged.</source>
+        <target>Erstellt ein neues Formular. Bestehende Formulare bleiben unverändert.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b70bdc2bd531" resname="fmp.ui_b70bdc2bd531" xml:space="preserve">
+        <source>: Clear order</source>
+        <target>: Sortierung entfernen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b7f150cc24cc" resname="fmp.ui_b7f150cc24cc" xml:space="preserve">
+        <source>This form is read-only.</source>
+        <target>Dieses Formular ist schreibgeschützt.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b8b1d894c683" resname="fmp.ui_b8b1d894c683" xml:space="preserve">
+        <source>Categories</source>
+        <target>Kategorien</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b8f096922100" resname="fmp.ui_b8f096922100" xml:space="preserve">
+        <source>Double-click or F2 to rename</source>
+        <target>Doppelklick oder F2 zum Umbenennen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b906edbe9087" resname="fmp.ui_b906edbe9087" xml:space="preserve">
+        <source>Form updated</source>
+        <target>Formular aktualisiert</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b951d98d451d" resname="fmp.ui_b951d98d451d" xml:space="preserve">
+        <source>This identifier is used more than once.</source>
+        <target>Diese Kennung wird mehrfach verwendet.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ba19e9c3d5f4" resname="fmp.ui_ba19e9c3d5f4" xml:space="preserve">
+        <source>Red</source>
+        <target>Rot</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_bb489680ebc1" resname="fmp.ui_bb489680ebc1" xml:space="preserve">
+        <source>Briefcase</source>
+        <target>Aktenkoffer</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_bc110a6d0722" resname="fmp.ui_bc110a6d0722" xml:space="preserve">
+        <source>Responsible</source>
+        <target>Verantwortlich</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_bc35b17b7546" resname="fmp.ui_bc35b17b7546" xml:space="preserve">
+        <source>Categories for this form</source>
+        <target>Kategorien für dieses Formular</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_bd6fa3a26248" resname="fmp.ui_bd6fa3a26248" xml:space="preserve">
+        <source>Multiple accessible forms have this identifier. Overwriting is ambiguous. Resolve duplicate identifiers or import as a new form.</source>
+        <target>Mehrere zugängliche Formulare haben diesen Identifier. Überschreiben ist deshalb nicht eindeutig möglich. Bitte die doppelten Kennungen bereinigen oder als neues Formular importieren.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_bdc0857b99a9" resname="fmp.ui_bdc0857b99a9" xml:space="preserve">
+        <source>Only me</source>
+        <target>Nur für mich</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_bdc090ec61e3" resname="fmp.ui_bdc090ec61e3" xml:space="preserve">
+        <source>Reload</source>
+        <target>Neu laden</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_c073b3fc721e" resname="fmp.ui_c073b3fc721e" xml:space="preserve">
+        <source>Unchanged for 180 days</source>
+        <target>Seit 180 Tagen unverändert</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_c08ac736a5e2" resname="fmp.ui_c08ac736a5e2" xml:space="preserve">
+        <source>Next page</source>
+        <target>Nächste Seite</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_c22fb9befbf5" resname="fmp.ui_c22fb9befbf5" xml:space="preserve">
+        <source>This file is too large or complex. Maximum: 2 MB.</source>
+        <target>Die Datei ist zu groß oder zu komplex. Maximal 2 MB.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_c31a3f15ca97" resname="fmp.ui_c31a3f15ca97" xml:space="preserve">
+        <source>Custom colour</source>
+        <target>Eigene Farbe</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_c36acab62a56" resname="fmp.ui_c36acab62a56" xml:space="preserve">
+        <source>Forms could not be loaded. Please try again. Your saved view is preserved.</source>
+        <target>Die Formulare konnten nicht geladen werden. Bitte erneut versuchen. Deine gespeicherte Ansicht bleibt erhalten.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_c4183639b784" resname="fmp.ui_c4183639b784" xml:space="preserve">
+        <source>Create in: </source>
+        <target>Anlegen in: </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_c570c5baee7a" resname="fmp.ui_c570c5baee7a" xml:space="preserve">
+        <source>Prototype</source>
+        <target>Prototyp</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_c82a43fc033e" resname="fmp.ui_c82a43fc033e" xml:space="preserve">
+        <source>Field/identifier: </source>
+        <target>Feld/Kennung: </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_c89d323bc6c5" resname="fmp.ui_c89d323bc6c5" xml:space="preserve">
+        <source>The destination form changed after the preview. Please create a new preview.</source>
+        <target>Das Zielformular wurde seit der Vorschau geändert. Bitte erstelle eine neue Vorschau.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ca4067071fcf" resname="fmp.ui_ca4067071fcf" xml:space="preserve">
+        <source>Selection</source>
+        <target>Auswahl</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_cab19ca43d53" resname="fmp.ui_cab19ca43d53" xml:space="preserve">
+        <source>Saving metadata with the form …</source>
+        <target>Metadaten werden mitgespeichert …</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_cb1e1f4d5c69" resname="fmp.ui_cb1e1f4d5c69" xml:space="preserve">
+        <source>Form properties</source>
+        <target>Formulareigenschaften</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_cbff99fe3bad" resname="fmp.ui_cbff99fe3bad" xml:space="preserve">
+        <source>+ Category</source>
+        <target>+ Kategorie</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_cc0d1135a312" resname="fmp.ui_cc0d1135a312" xml:space="preserve">
+        <source>Manage views</source>
+        <target>Ansichten verwalten</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_cea4d2e010b8" resname="fmp.ui_cea4d2e010b8" xml:space="preserve">
+        <source>Clear selection</source>
+        <target>Auswahl aufheben</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ceb98fe0f63e" resname="fmp.ui_ceb98fe0f63e" xml:space="preserve">
+        <source>Metadata can only be changed in the live workspace.</source>
+        <target>Metadaten können nur im Live-Workspace geändert werden.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ced4585867bb" resname="fmp.ui_ced4585867bb" xml:space="preserve">
+        <source>A form with this name already exists. You can choose a different name before previewing.</source>
+        <target>Ein Formular mit diesem Namen existiert bereits. Du kannst vor der Vorschau einen anderen Namen wählen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d1da5e075c56" resname="fmp.ui_d1da5e075c56" xml:space="preserve">
+        <source>Saved view</source>
+        <target>Gespeicherte Ansicht</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d26934e5a98a" resname="fmp.ui_d26934e5a98a" xml:space="preserve">
+        <source>Your session changed. Please reload the module.</source>
+        <target>Die Sitzung wurde erneuert. Bitte das Modul neu laden.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d2ada3f0f6e8" resname="fmp.ui_d2ada3f0f6e8" xml:space="preserve">
+        <source>Identifier from file: </source>
+        <target>Identifier aus der Datei: </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d2b93e0000ef" resname="fmp.ui_d2b93e0000ef" xml:space="preserve">
+        <source>Import steps</source>
+        <target>Importschritte</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d486dfbd5fb5" resname="fmp.ui_d486dfbd5fb5" xml:space="preserve">
+        <source>Green</source>
+        <target>Grün</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d4ac58091b02" resname="fmp.ui_d4ac58091b02" xml:space="preserve">
+        <source>Grey</source>
+        <target>Grau</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d4d7cda0a7c1" resname="fmp.ui_d4d7cda0a7c1" xml:space="preserve">
+        <source>Remove category: </source>
+        <target>Kategorie entfernen: </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d4e8830a71c7" resname="fmp.ui_d4e8830a71c7" xml:space="preserve">
+        <source>Purpose</source>
+        <target>Zweck</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d5d0a30b517e" resname="fmp.ui_d5d0a30b517e" xml:space="preserve">
+        <source>Calendar</source>
+        <target>Kalender</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d66cc626c287" resname="fmp.ui_d66cc626c287" xml:space="preserve">
+        <source> forms selected. The action applies to the entire selection, including other pages.</source>
+        <target> Formulare ausgewählt. Die Aktion gilt für die gesamte Auswahl, auch auf anderen Seiten.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d67149ae506d" resname="fmp.ui_d67149ae506d" xml:space="preserve">
+        <source>You will be assigned as the copy’s responsible user.</source>
+        <target>Du wirst als Verantwortlicher der Kopie eingetragen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d75612450689" resname="fmp.ui_d75612450689" xml:space="preserve">
+        <source> (copy)</source>
+        <target> (Kopie)</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d796c38aa385" resname="fmp.ui_d796c38aa385" xml:space="preserve">
+        <source>Download started: </source>
+        <target>Download gestartet: </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d83718af4bb9" resname="fmp.ui_d83718af4bb9" xml:space="preserve">
+        <source>View imported definition</source>
+        <target>Importierte Definition ansehen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d8b8392e2c54" resname="fmp.ui_d8b8392e2c54" xml:space="preserve">
+        <source>Try again</source>
+        <target>Erneut versuchen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d8ecfc07659d" resname="fmp.ui_d8ecfc07659d" xml:space="preserve">
+        <source>Internal notes</source>
+        <target>Interne Hinweise</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d901af79850f" resname="fmp.ui_d901af79850f" xml:space="preserve">
+        <source>TYPO3 could not read the form definition. Review the definition and storage.</source>
+        <target>TYPO3 konnte die Formulardefinition nicht lesen. Definition und Speicher prüfen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d97d51d37092" resname="fmp.ui_d97d51d37092" xml:space="preserve">
+        <source>Favourites</source>
+        <target>Favoriten</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_da7535d59ea5" resname="fmp.ui_da7535d59ea5" xml:space="preserve">
+        <source>Form name after import</source>
+        <target>Formularname nach Import</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_dc20b3d5d2cd" resname="fmp.ui_dc20b3d5d2cd" xml:space="preserve">
+        <source>Library</source>
+        <target>Bibliothek</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_dc37e617149e" resname="fmp.ui_dc37e617149e" xml:space="preserve">
+        <source>The selection exceeds 10 MB. Select fewer forms.</source>
+        <target>Die Auswahl überschreitet 10 MB. Bitte weniger Formulare auswählen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_dc937b598926" resname="fmp.ui_dc937b598926" xml:space="preserve">
+        <source>None</source>
+        <target>Keine</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_dc9cda496b76" resname="fmp.ui_dc9cda496b76" xml:space="preserve">
+        <source>Import as a new form</source>
+        <target>Als neues Formular importieren</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_dcd1d5223f73" resname="fmp.ui_dcd1d5223f73" xml:space="preserve">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_dd34029a1768" resname="fmp.ui_dd34029a1768" xml:space="preserve">
+        <source>Remove categories</source>
+        <target>Kategorien entfernen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_df410074206c" resname="fmp.ui_df410074206c" xml:space="preserve">
+        <source>Add categories</source>
+        <target>Kategorien hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_df72c773f01e" resname="fmp.ui_df72c773f01e" xml:space="preserve">
+        <source>I reviewed the changes and want to overwrite “</source>
+        <target>Ich habe die Änderungen geprüft und möchte „</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_df750ab9990f" resname="fmp.ui_df750ab9990f" xml:space="preserve">
+        <source>Review import</source>
+        <target>Import prüfen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_e09b37bcc4f3" resname="fmp.ui_e09b37bcc4f3" xml:space="preserve">
+        <source>Name (optional)</source>
+        <target>Name (optional)</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_e2a2ac5e764b" resname="fmp.ui_e2a2ac5e764b" xml:space="preserve">
+        <source>This import preview expired. Please preview again.</source>
+        <target>Die Importvorschau ist abgelaufen. Bitte erneut prüfen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_e2fe353986e6" resname="fmp.ui_e2fe353986e6" xml:space="preserve">
+        <source>Rendering</source>
+        <target>Darstellung</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_e31c440a4276" resname="fmp.ui_e31c440a4276" xml:space="preserve">
+        <source>Copy purpose</source>
+        <target>Zweck übernehmen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_e357d396871d" resname="fmp.ui_e357d396871d" xml:space="preserve">
+        <source>Star</source>
+        <target>Stern</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_e5a0f08c92c2" resname="fmp.ui_e5a0f08c92c2" xml:space="preserve">
+        <source>This technical option cannot be imported automatically. Configure it in the target project.</source>
+        <target>Diese technische Option wird nicht automatisch importiert. Im Zielprojekt konfigurieren.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_e7e15fc57b52" resname="fmp.ui_e7e15fc57b52" xml:space="preserve">
+        <source>Show selected forms</source>
+        <target>Ausgewählte Formulare anzeigen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_e8fe96a2bdd3" resname="fmp.ui_e8fe96a2bdd3" xml:space="preserve">
+        <source>Remove filter: </source>
+        <target>Filter entfernen: </target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_e989d6094b67" resname="fmp.ui_e989d6094b67" xml:space="preserve">
+        <source>Group by category</source>
+        <target>Nach Kategorie gruppieren</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_eb0236aaf673" resname="fmp.ui_eb0236aaf673" xml:space="preserve">
+        <source>Saving …</source>
+        <target>Wird gespeichert …</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_eb970eb0951c" resname="fmp.ui_eb970eb0951c" xml:space="preserve">
+        <source>Last</source>
+        <target>Letzte</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ebb8cc189391" resname="fmp.ui_ebb8cc189391" xml:space="preserve">
+        <source>This placeholder does not match a known field. Review project-specific variables.</source>
+        <target>Diese Platzhalter-Referenz passt zu keinem gefundenen Feld. Projektspezifische Variablen prüfen.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ebf2023c7ca0" resname="fmp.ui_ebf2023c7ca0" xml:space="preserve">
+        <source>This page</source>
+        <target>Diese Seite</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ec08ff86c3f5" resname="fmp.ui_ec08ff86c3f5" xml:space="preserve">
+        <source>Content element</source>
+        <target>Inhaltselement</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ec7d56a01607" resname="fmp.ui_ec7d56a01607" xml:space="preserve">
+        <source>Blue</source>
+        <target>Blau</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ec9ecc0d30ff" resname="fmp.ui_ec9ecc0d30ff" xml:space="preserve">
+        <source>Use the name from the file</source>
+        <target>Namen aus der Datei übernehmen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ecd2c14e5cba" resname="fmp.ui_ecd2c14e5cba" xml:space="preserve">
+        <source>Person or team – additional information (optional)</source>
+        <target>Person oder Team – ergänzende Angabe (optional)</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ed55a43f251c" resname="fmp.ui_ed55a43f251c" xml:space="preserve">
+        <source>Copy categories</source>
+        <target>Kategorien übernehmen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_f0478c1a142c" resname="fmp.ui_f0478c1a142c" xml:space="preserve">
+        <source>User #</source>
+        <target>Benutzer #</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_f0f183eba569" resname="fmp.ui_f0f183eba569" xml:space="preserve">
+        <source>No match: no accessible form has this identifier. Only “Import as a new form” is available.</source>
+        <target>Kein Treffer: Es gibt kein zugängliches Formular mit diesem Identifier. Nur „Als neues Formular importieren“ ist möglich.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_f326a6b0fd96" resname="fmp.ui_f326a6b0fd96" xml:space="preserve">
+        <source>No matching categories.</source>
+        <target>Keine passenden Kategorien.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_f3d189fe581d" resname="fmp.ui_f3d189fe581d" xml:space="preserve">
+        <source>Delete this view?</source>
+        <target>Diese Ansicht löschen?</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_f4c70fdd620b" resname="fmp.ui_f4c70fdd620b" xml:space="preserve">
+        <source> selected (max. 50)</source>
+        <target> ausgewählt (max. 50)</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_f70e18115311" resname="fmp.ui_f70e18115311" xml:space="preserve">
+        <source>Persistence identifier</source>
+        <target>Speicherkennung</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_f74707b332be" resname="fmp.ui_f74707b332be" xml:space="preserve">
+        <source>Team members only see forms they are authorized to access.</source>
+        <target>Teammitglieder sehen nur Formulare, für die sie berechtigt sind.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_f96ad877aad1" resname="fmp.ui_f96ad877aad1" xml:space="preserve">
+        <source>The configured sender address is invalid.</source>
+        <target>Die fest eingetragene Absenderadresse ist ungültig.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_fa15a5c1d610" resname="fmp.ui_fa15a5c1d610" xml:space="preserve">
+        <source>Teal</source>
+        <target>Türkis</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_fa7fe67124e9" resname="fmp.ui_fa7fe67124e9" xml:space="preserve">
+        <source>Database</source>
+        <target>Datenbank</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_fb5380196b8b" resname="fmp.ui_fb5380196b8b" xml:space="preserve">
+        <source>Loading metadata …</source>
+        <target>Metadaten werden geladen …</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_fe5cb76507c8" resname="fmp.ui_fe5cb76507c8" xml:space="preserve">
+        <source>Form usage locations</source>
+        <target>Verwendungsstellen des Formulars</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_fe8b0b062d56" resname="fmp.ui_fe8b0b062d56" xml:space="preserve">
+        <source>Form imported</source>
+        <target>Formular importiert</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ff3a45d32c32" resname="fmp.ui_ff3a45d32c32" xml:space="preserve">
+        <source> — this form can be overwritten.</source>
+        <target> — dieses Formular kann überschrieben werden.</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ff8059dc6752" resname="fmp.ui_ff8059dc6752" xml:space="preserve">
+        <source>Actions</source>
+        <target>Aktionen</target>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ffa51545a01a" resname="fmp.ui_ffa51545a01a" xml:space="preserve">
+        <source>Purpose, ownership and internal notes.</source>
+        <target>Zweck, Zuständigkeit und interne Hinweise.</target>
+      </trans-unit>
+      <trans-unit id="fmp.php_02cdaabfca80" resname="fmp.php_02cdaabfca80" xml:space="preserve">
+        <source>Duplicate</source>
+        <target>Duplizieren</target>
+      </trans-unit>
+      <trans-unit id="fmp.php_268135f9291a" resname="fmp.php_268135f9291a" xml:space="preserve">
+        <source>M j, Y</source>
+        <target>d.m.Y</target>
+      </trans-unit>
+      <trans-unit id="fmp.php_3664895579f0" resname="fmp.php_3664895579f0" xml:space="preserve">
+        <source>Export</source>
+        <target>Exportieren</target>
+      </trans-unit>
+      <trans-unit id="fmp.php_5a574d47bb6a" resname="fmp.php_5a574d47bb6a" xml:space="preserve">
+        <source>No detected references</source>
+        <target>Keine gefundenen Referenzen</target>
+      </trans-unit>
+      <trans-unit id="fmp.php_8d0ce2baadae" resname="fmp.php_8d0ce2baadae" xml:space="preserve">
+        <source>Show usage locations</source>
+        <target>Verwendungsstellen anzeigen</target>
+      </trans-unit>
+      <trans-unit id="fmp.php_92114e3e22d5" resname="fmp.php_92114e3e22d5" xml:space="preserve">
+        <source>Uncategorised</source>
+        <target>Ohne Kategorie</target>
+      </trans-unit>
+      <trans-unit id="fmp.php_9eddf573cb50" resname="fmp.php_9eddf573cb50" xml:space="preserve">
+        <source>Metadata</source>
+        <target>Metadaten</target>
+      </trans-unit>
+      <trans-unit id="fmp.php_afc35ca904ae" resname="fmp.php_afc35ca904ae" xml:space="preserve">
+        <source>Filter by category: </source>
+        <target>Nach Kategorie filtern: </target>
+      </trans-unit>
+      <trans-unit id="fmp.php_e2d0a54968ea" resname="fmp.php_e2d0a54968ea" xml:space="preserve">
+        <source>Delete</source>
+        <target>Löschen</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

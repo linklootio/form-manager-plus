@@ -1,0 +1,4 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:plus="http://typo3.org/ns/SchefferWebdesign/FormManagerPlus/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:variable name="tableConfig" value="{plus:tableConfig()}" />
+<f:if condition="{tableConfig.enabled}"><f:then><f:render partial="FormManagerPlus/AjaxList" arguments="{tableConfig: tableConfig, formManagerAppInitialData: formManagerAppInitialData}" /></f:then><f:else><f:render partial="FormManagerPlus/LegacyList" arguments="{_all}" /></f:else></f:if>
+</html>

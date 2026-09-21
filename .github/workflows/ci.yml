@@ -1,0 +1,51 @@
+name: Extension quality
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        typo3: ['13.4', '14.3']
+        php: ['8.2', '8.3', '8.4']
+        database: [pdo_sqlite, pdo_mysql]
+    services:
+      mariadb:
+        image: mariadb:11.4
+        env:
+          MARIADB_ROOT_PASSWORD: local-ci-only
+        ports: ['3306:3306']
+        options: >-
+          --health-cmd="healthcheck.sh --connect --innodb_initialized"
+          --health-interval=10s --health-timeout=5s --health-retries=10
+    env:
+      COMPOSER_ROOT_VERSION: '1.0.0'
+      typo3DatabaseDriver: ${{ matrix.database }}
+      typo3DatabaseHost: '127.0.0.1'
+      typo3DatabaseUsername: root
+      typo3DatabasePassword: local-ci-only
+      typo3DatabaseName: fmp_ci
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: intl, mbstring, pdo_sqlite, pdo_mysql, zip, gd
+          coverage: none
+          tools: composer:v2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: composer update --with "typo3/cms-core:~${{ matrix.typo3 }}.0" --prefer-dist --no-interaction
+      - run: composer validate --strict --no-check-lock
+      # Core 13 requires doctrine/annotations; report abandonment, fail vulnerabilities.
+      - run: composer audit --abandoned=report
+      - run: composer test:unit
+      - run: composer test:functional
+      - run: php Build/phpstan.php
+      - run: composer check:style
+      - run: find Resources/Public/JavaScript -name '*.js' -print0 | xargs -0 -n1 node --check
+      - run: composer release:check
+      - run: composer release:build

@@ -1,0 +1,7 @@
+prototypes:
+  standard:
+    formEditor:
+      dynamicJavaScriptModules:
+        additionalViewModelModules:
+          FormManagerPlusFocus: '@scheffer/form-manager-plus/focus.js'
+          FormManagerPlusDescription: '@scheffer/form-manager-plus/editor-description.js'

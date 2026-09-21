@@ -1,0 +1,1192 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.2">
+  <file source-language="en" datatype="plaintext" original="messages" product-name="form_manager_plus">
+    <body>
+      <trans-unit id="title">
+        <source>Form management</source>
+      </trans-unit>
+      <trans-unit id="uid">
+        <source>File UID</source>
+      </trans-unit>
+      <trans-unit id="name">
+        <source>Form name</source>
+      </trans-unit>
+      <trans-unit id="location">
+        <source>Location</source>
+      </trans-unit>
+      <trans-unit id="references">
+        <source>References</source>
+      </trans-unit>
+      <trans-unit id="actions">
+        <source>Actions</source>
+      </trans-unit>
+      <trans-unit id="edit">
+        <source>Edit form</source>
+      </trans-unit>
+      <trans-unit id="duplicate">
+        <source>Duplicate form</source>
+      </trans-unit>
+      <trans-unit id="delete">
+        <source>Delete form</source>
+      </trans-unit>
+      <trans-unit id="history">
+        <source>History</source>
+      </trans-unit>
+      <trans-unit id="search">
+        <source>Search forms</source>
+      </trans-unit>
+      <trans-unit id="length">
+        <source>Entries per page</source>
+      </trans-unit>
+      <trans-unit id="group">
+        <source>Category</source>
+      </trans-unit>
+      <trans-unit id="allGroups">
+        <source>All categories</source>
+      </trans-unit>
+      <trans-unit id="ungrouped">
+        <source>No category</source>
+      </trans-unit>
+      <trans-unit id="previous">
+        <source>Previous</source>
+      </trans-unit>
+      <trans-unit id="next">
+        <source>Next</source>
+      </trans-unit>
+      <trans-unit id="empty">
+        <source>No matching forms</source>
+      </trans-unit>
+      <trans-unit id="invalid">
+        <source>Invalid form</source>
+      </trans-unit>
+      <trans-unit id="duplicateIdentifier">
+        <source>Duplicate identifier</source>
+      </trans-unit>
+      <trans-unit id="readOnly">
+        <source>Read only</source>
+      </trans-unit>
+      <trans-unit id="total">
+        <source>Forms</source>
+      </trans-unit>
+      <trans-unit id="page">
+        <source>Page</source>
+      </trans-unit>
+      <trans-unit id="of">
+        <source>of</source>
+      </trans-unit>
+      <trans-unit id="reset">
+        <source>Reset filters</source>
+      </trans-unit>
+      <trans-unit id="categoriesTitle">
+        <source>Keep your forms organised</source>
+      </trans-unit>
+      <trans-unit id="categoriesHint">
+        <source>Select the category chip below a form name to edit its categories here. Save and close returns to this overview.</source>
+      </trans-unit>
+      <trans-unit id="createCategory">
+        <source>New category</source>
+      </trans-unit>
+      <trans-unit id="categoryStorage">
+        <source>Create category in</source>
+      </trans-unit>
+      <trans-unit id="editCategories">
+        <source>Edit categories</source>
+      </trans-unit>
+      <trans-unit id="assignCategories">
+        <source>Assign categories</source>
+      </trans-unit>
+      <trans-unit id="noFileCategories">
+        <source>No file categories</source>
+      </trans-unit>
+      <trans-unit id="editorCategories">
+        <source>Categories</source>
+      </trans-unit>
+      <trans-unit id="reload">
+        <source>Reload</source>
+      </trans-unit>
+      <trans-unit id="stateSaved">
+        <source>Your search, category, sorting and page are remembered in this browser. Reset filters restores the default view.</source>
+      </trans-unit>
+      <trans-unit id="requiresJs">
+        <source>JavaScript is required to load this form list.</source>
+      </trans-unit>
+      <trans-unit id="profile">
+        <source>Metadata</source>
+      </trans-unit>
+      <trans-unit id="check">
+        <source>Inspect</source>
+      </trans-unit>
+      <trans-unit id="transfer">
+        <source>Transfer</source>
+      </trans-unit>
+      <trans-unit id="favorite">
+        <source>Add to favourites</source>
+      </trans-unit>
+      <trans-unit id="unfavorite">
+        <source>Remove from favourites</source>
+      </trans-unit>
+      <trans-unit id="modified">
+        <source>Modified</source>
+      </trans-unit>
+      <trans-unit id="categoryAppearance">
+        <source>Form Manager Plus: appearance</source>
+      </trans-unit>
+      <trans-unit id="categoryColor">
+        <source>Category colour</source>
+      </trans-unit>
+      <trans-unit id="categoryColor.blue">
+        <source>Blue</source>
+      </trans-unit>
+      <trans-unit id="categoryColor.gray">
+        <source>Grey</source>
+      </trans-unit>
+      <trans-unit id="categoryColor.green">
+        <source>Green</source>
+      </trans-unit>
+      <trans-unit id="categoryColor.orange">
+        <source>Orange</source>
+      </trans-unit>
+      <trans-unit id="categoryColor.purple">
+        <source>Purple</source>
+      </trans-unit>
+      <trans-unit id="categoryColor.red">
+        <source>Red</source>
+      </trans-unit>
+      <trans-unit id="categoryColor.teal">
+        <source>Teal</source>
+      </trans-unit>
+      <trans-unit id="categoryColorHelp">
+        <source>Optional. Leave empty for the standard appearance. Used only in Form Manager Plus.</source>
+      </trans-unit>
+      <trans-unit id="categoryIcon">
+        <source>Category icon</source>
+      </trans-unit>
+      <trans-unit id="categoryIcon.bell">
+        <source>Bell</source>
+      </trans-unit>
+      <trans-unit id="categoryIcon.briefcase">
+        <source>Briefcase</source>
+      </trans-unit>
+      <trans-unit id="categoryIcon.calendar">
+        <source>Calendar</source>
+      </trans-unit>
+      <trans-unit id="categoryIcon.check">
+        <source>Check mark</source>
+      </trans-unit>
+      <trans-unit id="categoryIcon.envelope">
+        <source>Envelope</source>
+      </trans-unit>
+      <trans-unit id="categoryIcon.folder">
+        <source>Folder</source>
+      </trans-unit>
+      <trans-unit id="categoryIcon.heart">
+        <source>Heart</source>
+      </trans-unit>
+      <trans-unit id="categoryIcon.star">
+        <source>Star</source>
+      </trans-unit>
+      <trans-unit id="categoryIcon.tag">
+        <source>Tag</source>
+      </trans-unit>
+      <trans-unit id="categoryIcon.user">
+        <source>Person</source>
+      </trans-unit>
+      <trans-unit id="categoryIcon.users">
+        <source>Team</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_003fd8e5671e" resname="fmp.ui_003fd8e5671e" xml:space="preserve">
+        <source>Responsible: </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0094fd79020c" resname="fmp.ui_0094fd79020c" xml:space="preserve">
+        <source>The definition exceeds the inspection limit.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_01c68c023ced" resname="fmp.ui_01c68c023ced" xml:space="preserve">
+        <source>No accessible categories yet.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_02cdaabfca80" resname="fmp.ui_02cdaabfca80" xml:space="preserve">
+        <source>Duplicate</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_02d6fa50b6a2" resname="fmp.ui_02d6fa50b6a2" xml:space="preserve">
+        <source>” · </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_04c20d31ebde" resname="fmp.ui_04c20d31ebde" xml:space="preserve">
+        <source>_START_–_END_ of _TOTAL_ forms</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_055770320a7d" resname="fmp.ui_055770320a7d" xml:space="preserve">
+        <source>Existing assignment – unavailable</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_057173bcdb1b" resname="fmp.ui_057173bcdb1b" xml:space="preserve">
+        <source>Overwrite form</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_05f89cf5a5cb" resname="fmp.ui_05f89cf5a5cb" xml:space="preserve">
+        <source>ZIP download started.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_062cf59a5be4" resname="fmp.ui_062cf59a5be4" xml:space="preserve">
+        <source>Storage: </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_064d0f67332b" resname="fmp.ui_064d0f67332b" xml:space="preserve">
+        <source>”. Categories and metadata are preserved.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_065ccba95e68" resname="fmp.ui_065ccba95e68" xml:space="preserve">
+        <source>LinkLoot for TYPO3 (new tab)</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0671e97ebb73" resname="fmp.ui_0671e97ebb73" xml:space="preserve">
+        <source>Drop transfer package here</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0676784f45f1" resname="fmp.ui_0676784f45f1" xml:space="preserve">
+        <source>Share view with</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_06d1ae6bcb25" resname="fmp.ui_06d1ae6bcb25" xml:space="preserve">
+        <source>Save metadata</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_074c88b68c47" resname="fmp.ui_074c88b68c47" xml:space="preserve">
+        <source>Default colour</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0767ef858aa8" resname="fmp.ui_0767ef858aa8" xml:space="preserve">
+        <source>Delete view</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0782abe0310f" resname="fmp.ui_0782abe0310f" xml:space="preserve">
+        <source>No writable storage location available.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0908fc93a613" resname="fmp.ui_0908fc93a613" xml:space="preserve">
+        <source>What is this form for?</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0a30a815d67d" resname="fmp.ui_0a30a815d67d" xml:space="preserve">
+        <source>Page</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0a4ac8b39328" resname="fmp.ui_0a4ac8b39328" xml:space="preserve">
+        <source>Keep your filters one click away.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0bdbb750609c" resname="fmp.ui_0bdbb750609c" xml:space="preserve">
+        <source>First page</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0d4de7fb8ca2" resname="fmp.ui_0d4de7fb8ca2" xml:space="preserve">
+        <source>Person / team (optional)</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0db9232b0685" resname="fmp.ui_0db9232b0685" xml:space="preserve">
+        <source>Creating copy …</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0fc155872c96" resname="fmp.ui_0fc155872c96" xml:space="preserve">
+        <source>The email subject is missing.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_0fe1058feb9f" resname="fmp.ui_0fe1058feb9f" xml:space="preserve">
+        <source>Last modified</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_10afa98480f2" resname="fmp.ui_10afa98480f2" xml:space="preserve">
+        <source>Reset filters</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_1185ff3323eb" resname="fmp.ui_1185ff3323eb" xml:space="preserve">
+        <source>Loading forms …</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_1191085ee6a9" resname="fmp.ui_1191085ee6a9" xml:space="preserve">
+        <source>Changed settings</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_11df411b19dd" resname="fmp.ui_11df411b19dd" xml:space="preserve">
+        <source>Grouped by category</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_1208ec01f223" resname="fmp.ui_1208ec01f223" xml:space="preserve">
+        <source>Previous page</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_14d33bd014e6" resname="fmp.ui_14d33bd014e6" xml:space="preserve">
+        <source>Unassigned</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_1503916a2ab2" resname="fmp.ui_1503916a2ab2" xml:space="preserve">
+        <source>Tag</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_183abc3e1a89" resname="fmp.ui_183abc3e1a89" xml:space="preserve">
+        <source>Removed elements</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_19766ed6ccb2" resname="fmp.ui_19766ed6ccb2" xml:space="preserve">
+        <source>Cancel</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_19f0dd9ac406" resname="fmp.ui_19f0dd9ac406" xml:space="preserve">
+        <source>Bulk actions</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_19fcdfdee7f1" resname="fmp.ui_19fcdfdee7f1" xml:space="preserve">
+        <source>Form name</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_1a675bfd38c3" resname="fmp.ui_1a675bfd38c3" xml:space="preserve">
+        <source>Change file</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_1ab1e121c0df" resname="fmp.ui_1ab1e121c0df" xml:space="preserve">
+        <source>New category</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_1cd2b4bc2090" resname="fmp.ui_1cd2b4bc2090" xml:space="preserve">
+        <source>Potential credential: remove it before transfer and configure it separately in the target project.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_1ff57a29d7c9" resname="fmp.ui_1ff57a29d7c9" xml:space="preserve">
+        <source>Next</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_204cc243c021" resname="fmp.ui_204cc243c021" xml:space="preserve">
+        <source>This import destination is unavailable or not permitted.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_204d6612d949" resname="fmp.ui_204d6612d949" xml:space="preserve">
+        <source>Search forms …</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2115387503f6" resname="fmp.ui_2115387503f6" xml:space="preserve">
+        <source>Save view</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2248a9fb8cca" resname="fmp.ui_2248a9fb8cca" xml:space="preserve">
+        <source>Review &amp; import</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_23fa6af3780a" resname="fmp.ui_23fa6af3780a" xml:space="preserve">
+        <source>No accessible usage locations found.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_26ad300a69a3" resname="fmp.ui_26ad300a69a3" xml:space="preserve">
+        <source>Overwrite matching identifier</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_26b864088fa3" resname="fmp.ui_26b864088fa3" xml:space="preserve">
+        <source>Added elements</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_26bfbd5c83f9" resname="fmp.ui_26bfbd5c83f9" xml:space="preserve">
+        <source>No file selected</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2742276525ff" resname="fmp.ui_2742276525ff" xml:space="preserve">
+        <source>Project-specific path, storage or record: review its mapping.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_292c06f0045a" resname="fmp.ui_292c06f0045a" xml:space="preserve">
+        <source>Category</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_293d404a500f" resname="fmp.ui_293d404a500f" xml:space="preserve">
+        <source>Destination</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_29cae1032956" resname="fmp.ui_29cae1032956" xml:space="preserve">
+        <source>A meaningful label is missing.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2a5cd31bc9e8" resname="fmp.ui_2a5cd31bc9e8" xml:space="preserve">
+        <source>: Reverse order</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2beb528ebbdd" resname="fmp.ui_2beb528ebbdd" xml:space="preserve">
+        <source>Import a form from a transfer package.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2c6d8d9c7563" resname="fmp.ui_2c6d8d9c7563" xml:space="preserve">
+        <source>Open copy</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2cff9baabf56" resname="fmp.ui_2cff9baabf56" xml:space="preserve">
+        <source>Import</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2da1823415ec" resname="fmp.ui_2da1823415ec" xml:space="preserve">
+        <source>Category: </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2e0e960ab320" resname="fmp.ui_2e0e960ab320" xml:space="preserve">
+        <source>Form</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_2f799be3086f" resname="fmp.ui_2f799be3086f" xml:space="preserve">
+        <source>No matching forms. Adjust your search or filters.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_30ee2266f3d0" resname="fmp.ui_30ee2266f3d0" xml:space="preserve">
+        <source>Preparing preview …</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_31e392d1c037" resname="fmp.ui_31e392d1c037" xml:space="preserve">
+        <source>Apply</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_332f32f0895d" resname="fmp.ui_332f32f0895d" xml:space="preserve">
+        <source>Form identifier</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_3363e5f143b7" resname="fmp.ui_3363e5f143b7" xml:space="preserve">
+        <source>Search: </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_364ec23bbacf" resname="fmp.ui_364ec23bbacf" xml:space="preserve">
+        <source>Form: </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_377f88209427" resname="fmp.ui_377f88209427" xml:space="preserve">
+        <source>Processing …</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_3802c445c835" resname="fmp.ui_3802c445c835" xml:space="preserve">
+        <source>Available users depend on your TYPO3 user permissions.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_3808d8352aad" resname="fmp.ui_3808d8352aad" xml:space="preserve">
+        <source>You do not have access to this form.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_3bfc972e9d34" resname="fmp.ui_3bfc972e9d34" xml:space="preserve">
+        <source>You can save up to 20 views.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_3c8e8d870142" resname="fmp.ui_3c8e8d870142" xml:space="preserve">
+        <source>All changes saved.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_3cf74cc75cd2" resname="fmp.ui_3cf74cc75cd2" xml:space="preserve">
+        <source>Element structure or order changed</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_3ff97c7a8428" resname="fmp.ui_3ff97c7a8428" xml:space="preserve">
+        <source>Review preview</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_40c414d50c39" resname="fmp.ui_40c414d50c39" xml:space="preserve">
+        <source>The redirect destination is missing.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4154c9515f3c" resname="fmp.ui_4154c9515f3c" xml:space="preserve">
+        <source>: Sort</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_43e26fda12d9" resname="fmp.ui_43e26fda12d9" xml:space="preserve">
+        <source>The email finisher has no recipients.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_44c12212e271" resname="fmp.ui_44c12212e271" xml:space="preserve">
+        <source>Select transfer package</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4543708d1196" resname="fmp.ui_4543708d1196" xml:space="preserve">
+        <source>Last page</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4551ca2a37cb" resname="fmp.ui_4551ca2a37cb" xml:space="preserve">
+        <source>Database finisher: review tables, fields and access in this project.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4615ca67340c" resname="fmp.ui_4615ca67340c" xml:space="preserve">
+        <source>Invalid form definition</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_465b5091f3a6" resname="fmp.ui_465b5091f3a6" xml:space="preserve">
+        <source>Checking existing forms …</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_470e7ee2a579" resname="fmp.ui_470e7ee2a579" xml:space="preserve">
+        <source>Discard unsaved changes?</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_47a1436c7090" resname="fmp.ui_47a1436c7090" xml:space="preserve">
+        <source>Envelope</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_49027dc6ed7e" resname="fmp.ui_49027dc6ed7e" xml:space="preserve">
+        <source>Keep your search, filters and sort order for later.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4a55b0207c56" resname="fmp.ui_4a55b0207c56" xml:space="preserve">
+        <source>Loading failed.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4c118f59f8b5" resname="fmp.ui_4c118f59f8b5" xml:space="preserve">
+        <source>No permitted import destination is available.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4ca48b4230a5" resname="fmp.ui_4ca48b4230a5" xml:space="preserve">
+        <source>Confirm import</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4f3484a983c5" resname="fmp.ui_4f3484a983c5" xml:space="preserve">
+        <source>My forms</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4f801f3d6fae" resname="fmp.ui_4f801f3d6fae" xml:space="preserve">
+        <source>Metadata saved.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_4fb6a31f6868" resname="fmp.ui_4fb6a31f6868" xml:space="preserve">
+        <source>Copy purpose, person / team and internal notes</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_50009ce1da4d" resname="fmp.ui_50009ce1da4d" xml:space="preserve">
+        <source>File</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_523cfcb59b78" resname="fmp.ui_523cfcb59b78" xml:space="preserve">
+        <source>Check mark</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_546d10379d07" resname="fmp.ui_546d10379d07" xml:space="preserve">
+        <source>The copy was created. Categories or metadata could not be fully copied. Open the copy to review them.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_5562eb882371" resname="fmp.ui_5562eb882371" xml:space="preserve">
+        <source>Changed elements</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_55723eda7bd5" resname="fmp.ui_55723eda7bd5" xml:space="preserve">
+        <source>Dependencies changed. Please preview again.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_560a44e224c0" resname="fmp.ui_560a44e224c0" xml:space="preserve">
+        <source>Category assignment is not editable here.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_5720b523333c" resname="fmp.ui_5720b523333c" xml:space="preserve">
+        <source>Review recipients and sender before using this form in the target project.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_572ffd186209" resname="fmp.ui_572ffd186209" xml:space="preserve">
+        <source>View name</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_58cefb489b1a" resname="fmp.ui_58cefb489b1a" xml:space="preserve">
+        <source>Reset all filters</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_591d9011ca2f" resname="fmp.ui_591d9011ca2f" xml:space="preserve">
+        <source>Person / team</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_5928602a946a" resname="fmp.ui_5928602a946a" xml:space="preserve">
+        <source>Select file</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_5985039f106d" resname="fmp.ui_5985039f106d" xml:space="preserve">
+        <source>Team</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_5a574d47bb6a" resname="fmp.ui_5a574d47bb6a" xml:space="preserve">
+        <source>No detected references</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_5b700343aea6" resname="fmp.ui_5b700343aea6" xml:space="preserve">
+        <source>Existing assignment – user unavailable</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_5d4ca22e7798" resname="fmp.ui_5d4ca22e7798" xml:space="preserve">
+        <source> (PHP ZIP unavailable)</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_5ef73c4f2d6e" resname="fmp.ui_5ef73c4f2d6e" xml:space="preserve">
+        <source>Change icon and colour: </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_5f198db25a77" resname="fmp.ui_5f198db25a77" xml:space="preserve">
+        <source>All owners</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_6007db63e18e" resname="fmp.ui_6007db63e18e" xml:space="preserve">
+        <source>Person</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_602b8b4eb49f" resname="fmp.ui_602b8b4eb49f" xml:space="preserve">
+        <source>Select: </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_605a73fff0fe" resname="fmp.ui_605a73fff0fe" xml:space="preserve">
+        <source>The operation could not be completed. Please try again.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_6076934f99bd" resname="fmp.ui_6076934f99bd" xml:space="preserve">
+        <source>Page </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_607cd1a075db" resname="fmp.ui_607cd1a075db" xml:space="preserve">
+        <source>Choose one or more TYPO3 categories. You can also create a new category here.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_610200a390f7" resname="fmp.ui_610200a390f7" xml:space="preserve">
+        <source>Filter categories</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_6153545856fc" resname="fmp.ui_6153545856fc" xml:space="preserve">
+        <source>Saved together with the form.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_61951694e361" resname="fmp.ui_61951694e361" xml:space="preserve">
+        <source>Review this page destination in the project.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_63d2643b059e" resname="fmp.ui_63d2643b059e" xml:space="preserve">
+        <source>Variants</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_64358b7a8780" resname="fmp.ui_64358b7a8780" xml:space="preserve">
+        <source>The identifier must start with a letter and contain only letters, numbers, - and _.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_64cff1319d2f" resname="fmp.ui_64cff1319d2f" xml:space="preserve">
+        <source>Action</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_667e1f8903d8" resname="fmp.ui_667e1f8903d8" xml:space="preserve">
+        <source>New view</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_66d1aaf218aa" resname="fmp.ui_66d1aaf218aa" xml:space="preserve">
+        <source>No static issues found.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_67262c3f4864" resname="fmp.ui_67262c3f4864" xml:space="preserve">
+        <source>Choose a Form Manager Plus transfer package.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_676db1fed1b4" resname="fmp.ui_676db1fed1b4" xml:space="preserve">
+        <source>Finishers</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_68e464db8f84" resname="fmp.ui_68e464db8f84" xml:space="preserve">
+        <source>I reviewed the preview and want to create a new form.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_69824d3b0e70" resname="fmp.ui_69824d3b0e70" xml:space="preserve">
+        <source>References</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_6a5447a0bdbe" resname="fmp.ui_6a5447a0bdbe" xml:space="preserve">
+        <source>HTML was sanitized. The preview contains the sanitized definition.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_6c0c4d6002c3" resname="fmp.ui_6c0c4d6002c3" xml:space="preserve">
+        <source>Not accessible</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_6d0db0ecf197" resname="fmp.ui_6d0db0ecf197" xml:space="preserve">
+        <source>Responsible backend user</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_6e2fd7e74b3a" resname="fmp.ui_6e2fd7e74b3a" xml:space="preserve">
+        <source>This form prototype is unavailable here.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_6ecabfd5d7e9" resname="fmp.ui_6ecabfd5d7e9" xml:space="preserve">
+        <source>Import forms from a transfer package, with a preview before applying changes.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_6fc2a6312846" resname="fmp.ui_6fc2a6312846" xml:space="preserve">
+        <source>Form library</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7070160fd97b" resname="fmp.ui_7070160fd97b" xml:space="preserve">
+        <source>Metadata not saved</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_71aacd3ac702" resname="fmp.ui_71aacd3ac702" xml:space="preserve">
+        <source>Import form</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_71d85fc11f51" resname="fmp.ui_71d85fc11f51" xml:space="preserve">
+        <source>No accessible form matches this identifier. Please import as a new form.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7203c2b3dad3" resname="fmp.ui_7203c2b3dad3" xml:space="preserve">
+        <source>Structure</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_721e3248163c" resname="fmp.ui_721e3248163c" xml:space="preserve">
+        <source>Match: “</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_73108b7d00e0" resname="fmp.ui_73108b7d00e0" xml:space="preserve">
+        <source>Check match again</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_738baad4b453" resname="fmp.ui_738baad4b453" xml:space="preserve">
+        <source>Search categories …</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_73a14fb1a3f0" resname="fmp.ui_73a14fb1a3f0" xml:space="preserve">
+        <source>”.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_73ce79353801" resname="fmp.ui_73ce79353801" xml:space="preserve">
+        <source>Saved. More recent changes are still unsaved.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_73ddd937c98b" resname="fmp.ui_73ddd937c98b" xml:space="preserve">
+        <source>Category name</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_74a883a037bc" resname="fmp.ui_74a883a037bc" xml:space="preserve">
+        <source>Settings</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_74ccd4330384" resname="fmp.ui_74ccd4330384" xml:space="preserve">
+        <source>Folder</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7551a0eca74e" resname="fmp.ui_7551a0eca74e" xml:space="preserve">
+        <source>Continue to settings</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7569c02cadc2" resname="fmp.ui_7569c02cadc2" xml:space="preserve">
+        <source>Pro feature</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_76900f1bfd16" resname="fmp.ui_76900f1bfd16" xml:space="preserve">
+        <source>Back</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7701c214f966" resname="fmp.ui_7701c214f966" xml:space="preserve">
+        <source> — no write permission. Overwrite is unavailable.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_770660f054e3" resname="fmp.ui_770660f054e3" xml:space="preserve">
+        <source>This finisher cannot be imported automatically for security reasons.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_770af9d18037" resname="fmp.ui_770af9d18037" xml:space="preserve">
+        <source>Heart</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7794db85de52" resname="fmp.ui_7794db85de52" xml:space="preserve">
+        <source>Select at least one category.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_78e7771b8b46" resname="fmp.ui_78e7771b8b46" xml:space="preserve">
+        <source>Orange</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_79c86a1da92e" resname="fmp.ui_79c86a1da92e" xml:space="preserve">
+        <source>Saved. More recent input is still unsaved.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7a7ac3e3fd7e" resname="fmp.ui_7a7ac3e3fd7e" xml:space="preserve">
+        <source>No forms yet.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7a96160fc1db" resname="fmp.ui_7a96160fc1db" xml:space="preserve">
+        <source>All forms</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7b709e8ccb99" resname="fmp.ui_7b709e8ccb99" xml:space="preserve">
+        <source>This form information changed in the meantime. Reload it before applying your changes.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7c29b2ec4ad2" resname="fmp.ui_7c29b2ec4ad2" xml:space="preserve">
+        <source>This form contains no steps.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7c7623328341" resname="fmp.ui_7c7623328341" xml:space="preserve">
+        <source>Review in form →</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7ca7140b565b" resname="fmp.ui_7ca7140b565b" xml:space="preserve">
+        <source>Review overwrite</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7d1c756d8b5e" resname="fmp.ui_7d1c756d8b5e" xml:space="preserve">
+        <source>Review new form</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7d465fb9b931" resname="fmp.ui_7d465fb9b931" xml:space="preserve">
+        <source>Purple</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7d9eb7acb13e" resname="fmp.ui_7d9eb7acb13e" xml:space="preserve">
+        <source>Close</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7da4871a2c4c" resname="fmp.ui_7da4871a2c4c" xml:space="preserve">
+        <source>Overwrites the matching form “</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_7ee985f230aa" resname="fmp.ui_7ee985f230aa" xml:space="preserve">
+        <source>An identifier is missing.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_804beb8dde3b" resname="fmp.ui_804beb8dde3b" xml:space="preserve">
+        <source>Person / team contains</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_80796358926c" resname="fmp.ui_80796358926c" xml:space="preserve">
+        <source>Select this page</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_80d51928255c" resname="fmp.ui_80d51928255c" xml:space="preserve">
+        <source> failed. These remain selected; review permissions and concurrent changes.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_81184cb517ed" resname="fmp.ui_81184cb517ed" xml:space="preserve">
+        <source>Saved views</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8190af1abdc3" resname="fmp.ui_8190af1abdc3" xml:space="preserve">
+        <source>The existing form definition will be replaced. Changes also affect existing embeds. Categories and metadata are preserved.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_83037aeb42d4" resname="fmp.ui_83037aeb42d4" xml:space="preserve">
+        <source>Set responsible user</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_84507c4d2cec" resname="fmp.ui_84507c4d2cec" xml:space="preserve">
+        <source>After: </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_850f5142a055" resname="fmp.ui_850f5142a055" xml:space="preserve">
+        <source>An available identifier will be assigned. Existing forms remain unchanged.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_858451263b1b" resname="fmp.ui_858451263b1b" xml:space="preserve">
+        <source>Forms</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8702eaf12c84" resname="fmp.ui_8702eaf12c84" xml:space="preserve">
+        <source>The form definition cannot be read. Inspect and repair it first.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_873512a948bc" resname="fmp.ui_873512a948bc" xml:space="preserve">
+        <source>Change settings</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8753e7693e86" resname="fmp.ui_8753e7693e86" xml:space="preserve">
+        <source>Preparing export …</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_87bb59ba2f92" resname="fmp.ui_87bb59ba2f92" xml:space="preserve">
+        <source>Workspace</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_890953ed89b0" resname="fmp.ui_890953ed89b0" xml:space="preserve">
+        <source>No forms</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8a85a235d9ac" resname="fmp.ui_8a85a235d9ac" xml:space="preserve">
+        <source>A configured email address is invalid.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8a964cc02a35" resname="fmp.ui_8a964cc02a35" xml:space="preserve">
+        <source>No changes recorded yet. History starts when this feature is enabled.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8be4459422e6" resname="fmp.ui_8be4459422e6" xml:space="preserve">
+        <source>This identifier already exists. Import will generate a new available identifier.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8c8bb6c32e52" resname="fmp.ui_8c8bb6c32e52" xml:space="preserve">
+        <source> updated. </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8cbf73cd9f5d" resname="fmp.ui_8cbf73cd9f5d" xml:space="preserve">
+        <source>The root type must be “Form”.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8d61a1d04fd6" resname="fmp.ui_8d61a1d04fd6" xml:space="preserve">
+        <source>Back to the form</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8e80b2b4b22a" resname="fmp.ui_8e80b2b4b22a" xml:space="preserve">
+        <source>Bell</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8e905fad1013" resname="fmp.ui_8e905fad1013" xml:space="preserve">
+        <source>The sender address is missing.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_8fc5046575ec" resname="fmp.ui_8fc5046575ec" xml:space="preserve">
+        <source>This finisher is not registered.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_91080b50922e" resname="fmp.ui_91080b50922e" xml:space="preserve">
+        <source>Team: </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_91f0d489c296" resname="fmp.ui_91f0d489c296" xml:space="preserve">
+        <source>No finisher is configured. Check what should happen after submission.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_9204c82a5d2b" resname="fmp.ui_9204c82a5d2b" xml:space="preserve">
+        <source>Shared information for authorised team members. Do not store passwords or submissions here.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_92114e3e22d5" resname="fmp.ui_92114e3e22d5" xml:space="preserve">
+        <source>Uncategorised</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_921ccf77df84" resname="fmp.ui_921ccf77df84" xml:space="preserve">
+        <source>Categories saved.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_938013c2eb9d" resname="fmp.ui_938013c2eb9d" xml:space="preserve">
+        <source>Bulk actions · PRO</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_93e70268d678" resname="fmp.ui_93e70268d678" xml:space="preserve">
+        <source>A form element is invalid.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_943ca1a76959" resname="fmp.ui_943ca1a76959" xml:space="preserve">
+        <source>_MENU_ per page</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_959bab56b1f0" resname="fmp.ui_959bab56b1f0" xml:space="preserve">
+        <source>Please check your input.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_964de7c92efe" resname="fmp.ui_964de7c92efe" xml:space="preserve">
+        <source>Change history</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_982a7984a6a4" resname="fmp.ui_982a7984a6a4" xml:space="preserve">
+        <source>Create copy</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_99214b4cde0f" resname="fmp.ui_99214b4cde0f" xml:space="preserve">
+        <source>The file does not contain valid JSON.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_99ac11a5705d" resname="fmp.ui_99ac11a5705d" xml:space="preserve">
+        <source>This element type is not registered in the target project.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_9ab7fb6fea31" resname="fmp.ui_9ab7fb6fea31" xml:space="preserve">
+        <source>Filters and actions</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_9d238c920ef8" resname="fmp.ui_9d238c920ef8" xml:space="preserve">
+        <source>Select multiple</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_9dd213621004" resname="fmp.ui_9dd213621004" xml:space="preserve">
+        <source>Assign category</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_9dfe01782bf9" resname="fmp.ui_9dfe01782bf9" xml:space="preserve">
+        <source>All storage locations</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_9e89d4aa8ce4" resname="fmp.ui_9e89d4aa8ce4" xml:space="preserve">
+        <source>The import completed successfully.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_9eddf573cb50" resname="fmp.ui_9eddf573cb50" xml:space="preserve">
+        <source>Metadata</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a037e5315ec8" resname="fmp.ui_a037e5315ec8" xml:space="preserve">
+        <source>Copy name</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a151ceb1711a" resname="fmp.ui_a151ceb1711a" xml:space="preserve">
+        <source>First</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a248c5608cc4" resname="fmp.ui_a248c5608cc4" xml:space="preserve">
+        <source>The session changed or access expired. Please reload the backend.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a2bcd39a7851" resname="fmp.ui_a2bcd39a7851" xml:space="preserve">
+        <source>Before: </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a3f530fd1cb1" resname="fmp.ui_a3f530fd1cb1" xml:space="preserve">
+        <source>New form</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a3fc77617024" resname="fmp.ui_a3fc77617024" xml:space="preserve">
+        <source>This feature requires Form Manager Plus Pro.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a47080aec4fe" resname="fmp.ui_a47080aec4fe" xml:space="preserve">
+        <source>Destination storage</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a57b08a480b8" resname="fmp.ui_a57b08a480b8" xml:space="preserve">
+        <source>Previous</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a59e289477fe" resname="fmp.ui_a59e289477fe" xml:space="preserve">
+        <source>Storage location</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a5a0ab823c4b" resname="fmp.ui_a5a0ab823c4b" xml:space="preserve">
+        <source>A view with this name already exists.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a662dce97a12" resname="fmp.ui_a662dce97a12" xml:space="preserve">
+        <source>Open form</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a75197fe0dfd" resname="fmp.ui_a75197fe0dfd" xml:space="preserve">
+        <source>This validator is not registered.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a86c3b3062e2" resname="fmp.ui_a86c3b3062e2" xml:space="preserve">
+        <source>(filtered from _MAX_)</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_a87964b69298" resname="fmp.ui_a87964b69298" xml:space="preserve">
+        <source>Import mode</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_aada20767063" resname="fmp.ui_aada20767063" xml:space="preserve">
+        <source>Import blocked. Correct the errors in the file.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ab2ddc803211" resname="fmp.ui_ab2ddc803211" xml:space="preserve">
+        <source>Back to the form list</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ab8282bb6517" resname="fmp.ui_ab8282bb6517" xml:space="preserve">
+        <source>Purpose / summary</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ac41b0f9427d" resname="fmp.ui_ac41b0f9427d" xml:space="preserve">
+        <source>Configure import</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ac8991ef0101" resname="fmp.ui_ac8991ef0101" xml:space="preserve">
+        <source>Load more</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_acc0626438c4" resname="fmp.ui_acc0626438c4" xml:space="preserve">
+        <source>Recently edited</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ad11a2a0d070" resname="fmp.ui_ad11a2a0d070" xml:space="preserve">
+        <source>Save assignment</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ae10e8899978" resname="fmp.ui_ae10e8899978" xml:space="preserve">
+        <source>Loading history …</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ae661efc63d6" resname="fmp.ui_ae661efc63d6" xml:space="preserve">
+        <source>No detected references does not automatically mean unused. Review dynamic integrations. Forms are never deleted automatically.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b09c73d9d3f8" resname="fmp.ui_b09c73d9d3f8" xml:space="preserve">
+        <source>Choose file</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b1ceca2a6ea4" resname="fmp.ui_b1ceca2a6ea4" xml:space="preserve">
+        <source>Export as ZIP</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b2a146d42dae" resname="fmp.ui_b2a146d42dae" xml:space="preserve">
+        <source>.fmp.json · maximum 2 MB</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b3bd12d950d8" resname="fmp.ui_b3bd12d950d8" xml:space="preserve">
+        <source>Creates a new form. Existing forms remain unchanged.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b70bdc2bd531" resname="fmp.ui_b70bdc2bd531" xml:space="preserve">
+        <source>: Clear order</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b7f150cc24cc" resname="fmp.ui_b7f150cc24cc" xml:space="preserve">
+        <source>This form is read-only.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b8b1d894c683" resname="fmp.ui_b8b1d894c683" xml:space="preserve">
+        <source>Categories</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b8f096922100" resname="fmp.ui_b8f096922100" xml:space="preserve">
+        <source>Double-click or F2 to rename</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b906edbe9087" resname="fmp.ui_b906edbe9087" xml:space="preserve">
+        <source>Form updated</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_b951d98d451d" resname="fmp.ui_b951d98d451d" xml:space="preserve">
+        <source>This identifier is used more than once.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ba19e9c3d5f4" resname="fmp.ui_ba19e9c3d5f4" xml:space="preserve">
+        <source>Red</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_bb489680ebc1" resname="fmp.ui_bb489680ebc1" xml:space="preserve">
+        <source>Briefcase</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_bc110a6d0722" resname="fmp.ui_bc110a6d0722" xml:space="preserve">
+        <source>Responsible</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_bc35b17b7546" resname="fmp.ui_bc35b17b7546" xml:space="preserve">
+        <source>Categories for this form</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_bd6fa3a26248" resname="fmp.ui_bd6fa3a26248" xml:space="preserve">
+        <source>Multiple accessible forms have this identifier. Overwriting is ambiguous. Resolve duplicate identifiers or import as a new form.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_bdc0857b99a9" resname="fmp.ui_bdc0857b99a9" xml:space="preserve">
+        <source>Only me</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_bdc090ec61e3" resname="fmp.ui_bdc090ec61e3" xml:space="preserve">
+        <source>Reload</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_c073b3fc721e" resname="fmp.ui_c073b3fc721e" xml:space="preserve">
+        <source>Unchanged for 180 days</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_c08ac736a5e2" resname="fmp.ui_c08ac736a5e2" xml:space="preserve">
+        <source>Next page</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_c22fb9befbf5" resname="fmp.ui_c22fb9befbf5" xml:space="preserve">
+        <source>This file is too large or complex. Maximum: 2 MB.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_c31a3f15ca97" resname="fmp.ui_c31a3f15ca97" xml:space="preserve">
+        <source>Custom colour</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_c36acab62a56" resname="fmp.ui_c36acab62a56" xml:space="preserve">
+        <source>Forms could not be loaded. Please try again. Your saved view is preserved.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_c4183639b784" resname="fmp.ui_c4183639b784" xml:space="preserve">
+        <source>Create in: </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_c570c5baee7a" resname="fmp.ui_c570c5baee7a" xml:space="preserve">
+        <source>Prototype</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_c82a43fc033e" resname="fmp.ui_c82a43fc033e" xml:space="preserve">
+        <source>Field/identifier: </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_c89d323bc6c5" resname="fmp.ui_c89d323bc6c5" xml:space="preserve">
+        <source>The destination form changed after the preview. Please create a new preview.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ca4067071fcf" resname="fmp.ui_ca4067071fcf" xml:space="preserve">
+        <source>Selection</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_cab19ca43d53" resname="fmp.ui_cab19ca43d53" xml:space="preserve">
+        <source>Saving metadata with the form …</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_cb1e1f4d5c69" resname="fmp.ui_cb1e1f4d5c69" xml:space="preserve">
+        <source>Form properties</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_cbff99fe3bad" resname="fmp.ui_cbff99fe3bad" xml:space="preserve">
+        <source>+ Category</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_cc0d1135a312" resname="fmp.ui_cc0d1135a312" xml:space="preserve">
+        <source>Manage views</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_cea4d2e010b8" resname="fmp.ui_cea4d2e010b8" xml:space="preserve">
+        <source>Clear selection</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ceb98fe0f63e" resname="fmp.ui_ceb98fe0f63e" xml:space="preserve">
+        <source>Metadata can only be changed in the live workspace.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ced4585867bb" resname="fmp.ui_ced4585867bb" xml:space="preserve">
+        <source>A form with this name already exists. You can choose a different name before previewing.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d1da5e075c56" resname="fmp.ui_d1da5e075c56" xml:space="preserve">
+        <source>Saved view</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d26934e5a98a" resname="fmp.ui_d26934e5a98a" xml:space="preserve">
+        <source>Your session changed. Please reload the module.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d2ada3f0f6e8" resname="fmp.ui_d2ada3f0f6e8" xml:space="preserve">
+        <source>Identifier from file: </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d2b93e0000ef" resname="fmp.ui_d2b93e0000ef" xml:space="preserve">
+        <source>Import steps</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d486dfbd5fb5" resname="fmp.ui_d486dfbd5fb5" xml:space="preserve">
+        <source>Green</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d4ac58091b02" resname="fmp.ui_d4ac58091b02" xml:space="preserve">
+        <source>Grey</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d4d7cda0a7c1" resname="fmp.ui_d4d7cda0a7c1" xml:space="preserve">
+        <source>Remove category: </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d4e8830a71c7" resname="fmp.ui_d4e8830a71c7" xml:space="preserve">
+        <source>Purpose</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d5d0a30b517e" resname="fmp.ui_d5d0a30b517e" xml:space="preserve">
+        <source>Calendar</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d66cc626c287" resname="fmp.ui_d66cc626c287" xml:space="preserve">
+        <source> forms selected. The action applies to the entire selection, including other pages.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d67149ae506d" resname="fmp.ui_d67149ae506d" xml:space="preserve">
+        <source>You will be assigned as the copy’s responsible user.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d75612450689" resname="fmp.ui_d75612450689" xml:space="preserve">
+        <source> (copy)</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d796c38aa385" resname="fmp.ui_d796c38aa385" xml:space="preserve">
+        <source>Download started: </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d83718af4bb9" resname="fmp.ui_d83718af4bb9" xml:space="preserve">
+        <source>View imported definition</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d8b8392e2c54" resname="fmp.ui_d8b8392e2c54" xml:space="preserve">
+        <source>Try again</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d8ecfc07659d" resname="fmp.ui_d8ecfc07659d" xml:space="preserve">
+        <source>Internal notes</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d901af79850f" resname="fmp.ui_d901af79850f" xml:space="preserve">
+        <source>TYPO3 could not read the form definition. Review the definition and storage.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_d97d51d37092" resname="fmp.ui_d97d51d37092" xml:space="preserve">
+        <source>Favourites</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_da7535d59ea5" resname="fmp.ui_da7535d59ea5" xml:space="preserve">
+        <source>Form name after import</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_dc20b3d5d2cd" resname="fmp.ui_dc20b3d5d2cd" xml:space="preserve">
+        <source>Library</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_dc37e617149e" resname="fmp.ui_dc37e617149e" xml:space="preserve">
+        <source>The selection exceeds 10 MB. Select fewer forms.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_dc937b598926" resname="fmp.ui_dc937b598926" xml:space="preserve">
+        <source>None</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_dc9cda496b76" resname="fmp.ui_dc9cda496b76" xml:space="preserve">
+        <source>Import as a new form</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_dcd1d5223f73" resname="fmp.ui_dcd1d5223f73" xml:space="preserve">
+        <source>Name</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_dd34029a1768" resname="fmp.ui_dd34029a1768" xml:space="preserve">
+        <source>Remove categories</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_df410074206c" resname="fmp.ui_df410074206c" xml:space="preserve">
+        <source>Add categories</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_df72c773f01e" resname="fmp.ui_df72c773f01e" xml:space="preserve">
+        <source>I reviewed the changes and want to overwrite “</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_df750ab9990f" resname="fmp.ui_df750ab9990f" xml:space="preserve">
+        <source>Review import</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_e09b37bcc4f3" resname="fmp.ui_e09b37bcc4f3" xml:space="preserve">
+        <source>Name (optional)</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_e2a2ac5e764b" resname="fmp.ui_e2a2ac5e764b" xml:space="preserve">
+        <source>This import preview expired. Please preview again.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_e2fe353986e6" resname="fmp.ui_e2fe353986e6" xml:space="preserve">
+        <source>Rendering</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_e31c440a4276" resname="fmp.ui_e31c440a4276" xml:space="preserve">
+        <source>Copy purpose</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_e357d396871d" resname="fmp.ui_e357d396871d" xml:space="preserve">
+        <source>Star</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_e5a0f08c92c2" resname="fmp.ui_e5a0f08c92c2" xml:space="preserve">
+        <source>This technical option cannot be imported automatically. Configure it in the target project.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_e7e15fc57b52" resname="fmp.ui_e7e15fc57b52" xml:space="preserve">
+        <source>Show selected forms</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_e8fe96a2bdd3" resname="fmp.ui_e8fe96a2bdd3" xml:space="preserve">
+        <source>Remove filter: </source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_e989d6094b67" resname="fmp.ui_e989d6094b67" xml:space="preserve">
+        <source>Group by category</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_eb0236aaf673" resname="fmp.ui_eb0236aaf673" xml:space="preserve">
+        <source>Saving …</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_eb970eb0951c" resname="fmp.ui_eb970eb0951c" xml:space="preserve">
+        <source>Last</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ebb8cc189391" resname="fmp.ui_ebb8cc189391" xml:space="preserve">
+        <source>This placeholder does not match a known field. Review project-specific variables.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ebf2023c7ca0" resname="fmp.ui_ebf2023c7ca0" xml:space="preserve">
+        <source>This page</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ec08ff86c3f5" resname="fmp.ui_ec08ff86c3f5" xml:space="preserve">
+        <source>Content element</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ec7d56a01607" resname="fmp.ui_ec7d56a01607" xml:space="preserve">
+        <source>Blue</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ec9ecc0d30ff" resname="fmp.ui_ec9ecc0d30ff" xml:space="preserve">
+        <source>Use the name from the file</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ecd2c14e5cba" resname="fmp.ui_ecd2c14e5cba" xml:space="preserve">
+        <source>Person or team – additional information (optional)</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ed55a43f251c" resname="fmp.ui_ed55a43f251c" xml:space="preserve">
+        <source>Copy categories</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_f0478c1a142c" resname="fmp.ui_f0478c1a142c" xml:space="preserve">
+        <source>User #</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_f0f183eba569" resname="fmp.ui_f0f183eba569" xml:space="preserve">
+        <source>No match: no accessible form has this identifier. Only “Import as a new form” is available.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_f326a6b0fd96" resname="fmp.ui_f326a6b0fd96" xml:space="preserve">
+        <source>No matching categories.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_f3d189fe581d" resname="fmp.ui_f3d189fe581d" xml:space="preserve">
+        <source>Delete this view?</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_f4c70fdd620b" resname="fmp.ui_f4c70fdd620b" xml:space="preserve">
+        <source> selected (max. 50)</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_f70e18115311" resname="fmp.ui_f70e18115311" xml:space="preserve">
+        <source>Persistence identifier</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_f74707b332be" resname="fmp.ui_f74707b332be" xml:space="preserve">
+        <source>Team members only see forms they are authorized to access.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_f96ad877aad1" resname="fmp.ui_f96ad877aad1" xml:space="preserve">
+        <source>The configured sender address is invalid.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_fa15a5c1d610" resname="fmp.ui_fa15a5c1d610" xml:space="preserve">
+        <source>Teal</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_fa7fe67124e9" resname="fmp.ui_fa7fe67124e9" xml:space="preserve">
+        <source>Database</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_fb5380196b8b" resname="fmp.ui_fb5380196b8b" xml:space="preserve">
+        <source>Loading metadata …</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_fe5cb76507c8" resname="fmp.ui_fe5cb76507c8" xml:space="preserve">
+        <source>Form usage locations</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_fe8b0b062d56" resname="fmp.ui_fe8b0b062d56" xml:space="preserve">
+        <source>Form imported</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ff3a45d32c32" resname="fmp.ui_ff3a45d32c32" xml:space="preserve">
+        <source> — this form can be overwritten.</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ff8059dc6752" resname="fmp.ui_ff8059dc6752" xml:space="preserve">
+        <source>Actions</source>
+      </trans-unit>
+      <trans-unit id="fmp.ui_ffa51545a01a" resname="fmp.ui_ffa51545a01a" xml:space="preserve">
+        <source>Purpose, ownership and internal notes.</source>
+      </trans-unit>
+      <trans-unit id="fmp.php_02cdaabfca80" resname="fmp.php_02cdaabfca80" xml:space="preserve">
+        <source>Duplicate</source>
+      </trans-unit>
+      <trans-unit id="fmp.php_268135f9291a" resname="fmp.php_268135f9291a" xml:space="preserve">
+        <source>M j, Y</source>
+      </trans-unit>
+      <trans-unit id="fmp.php_3664895579f0" resname="fmp.php_3664895579f0" xml:space="preserve">
+        <source>Export</source>
+      </trans-unit>
+      <trans-unit id="fmp.php_5a574d47bb6a" resname="fmp.php_5a574d47bb6a" xml:space="preserve">
+        <source>No detected references</source>
+      </trans-unit>
+      <trans-unit id="fmp.php_8d0ce2baadae" resname="fmp.php_8d0ce2baadae" xml:space="preserve">
+        <source>Show usage locations</source>
+      </trans-unit>
+      <trans-unit id="fmp.php_92114e3e22d5" resname="fmp.php_92114e3e22d5" xml:space="preserve">
+        <source>Uncategorised</source>
+      </trans-unit>
+      <trans-unit id="fmp.php_9eddf573cb50" resname="fmp.php_9eddf573cb50" xml:space="preserve">
+        <source>Metadata</source>
+      </trans-unit>
+      <trans-unit id="fmp.php_afc35ca904ae" resname="fmp.php_afc35ca904ae" xml:space="preserve">
+        <source>Filter by category: </source>
+      </trans-unit>
+      <trans-unit id="fmp.php_e2d0a54968ea" resname="fmp.php_e2d0a54968ea" xml:space="preserve">
+        <source>Delete</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

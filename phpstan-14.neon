@@ -1,0 +1,8 @@
+includes:
+    - phpstan.neon
+parameters:
+    excludePaths:
+        analyseAndScan:
+            - Classes/Compatibility/DeferredFormManager13.php
+            - Classes/Compatibility/CurrentFormSource.php
+            - Classes/Compatibility/Persistence13.php

@@ -1,0 +1,76 @@
+{
+  "name": "scheffer-webdesign/form-manager-plus",
+  "description": "Form Manager Plus Lite - Organize TYPO3 forms with categories, search and metadata.",
+  "type": "typo3-cms-extension",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": ">=8.2 <8.5",
+    "typo3/cms-core": "~13.4.0 || ~14.3.0",
+    "typo3/cms-backend": "~13.4.0 || ~14.3.0",
+    "typo3/cms-form": "~13.4.0 || ~14.3.0",
+    "typo3/cms-fluid": "~13.4.0 || ~14.3.0",
+    "typo3/cms-extbase": "~13.4.0 || ~14.3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SchefferWebdesign\\FormManagerPlus\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "form_manager_plus",
+      "version": "1.0.0",
+      "Package": {
+        "providesPackages": {}
+      }
+    }
+  },
+  "homepage": "https://typo3.linkloot.io/",
+  "authors": [
+    {
+      "name": "scheffer-webdesign",
+      "homepage": "https://typo3.linkloot.io/",
+      "email": "info@linkloot.io"
+    }
+  ],
+  "keywords": [
+    "typo3",
+    "forms",
+    "form-manager",
+    "categories"
+  ],
+  "support": {
+    "source": "https://github.com/linklootio/form-manager-plus",
+    "issues": "https://github.com/linklootio/form-manager-plus/issues",
+    "docs": "https://typo3.linkloot.io/",
+    "email": "info@linkloot.io"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.5",
+    "typo3/testing-framework": "^9.7",
+    "phpstan/phpstan": "^2.1",
+    "typo3/coding-standards": "^0.9.0"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SchefferWebdesign\\FormManagerPlus\\Tests\\": "Tests/"
+    }
+  },
+  "scripts": {
+    "test:unit": "phpunit -c phpunit.xml --testsuite unit",
+    "test:functional": "phpunit -c phpunit.xml --testsuite functional",
+    "lint": "php -l ext_localconf.php",
+    "check:types": "php Build/phpstan.php",
+    "check:style": "php-cs-fixer fix --dry-run --diff",
+    "fix:style": "php-cs-fixer fix",
+    "release:check": "php Build/check-release.php",
+    "release:build": "php Build/build-release.php"
+  },
+  "config": {
+    "allow-plugins": {
+      "typo3/cms-composer-installers": true,
+      "typo3/class-alias-loader": true
+    },
+    "sort-packages": true
+  }
+}

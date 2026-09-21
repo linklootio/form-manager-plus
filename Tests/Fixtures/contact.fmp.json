@@ -1,0 +1,26 @@
+{
+  "format": "form-manager-plus",
+  "version": 1,
+  "definition": {
+    "type": "Form",
+    "identifier": "transfer-contact",
+    "label": "Transfer Contact Demo",
+    "prototypeName": "standard",
+    "renderingOptions": {"submitButtonLabel": "Send demo"},
+    "renderables": [
+      {
+        "type": "Page",
+        "identifier": "page-1",
+        "label": "Your request",
+        "renderables": [
+          {"type": "Text", "identifier": "name", "label": "Name"},
+          {"type": "Email", "identifier": "email", "label": "Email"},
+          {"type": "Textarea", "identifier": "message", "label": "Message"}
+        ]
+      }
+    ],
+    "finishers": [
+      {"identifier": "Confirmation", "options": {"message": "Thanks for trying the demo."}}
+    ]
+  }
+}

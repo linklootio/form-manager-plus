@@ -1,0 +1,27 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  SchefferWebdesign\FormManagerPlus\:
+    resource: '../Classes/*'
+    exclude: ['../Classes/Compatibility/*', '../Classes/EventListener/*', '../Classes/Controller/ToolsController.php']
+
+  SchefferWebdesign\FormManagerPlus\Service\ProOperationsInterface:
+    alias: SchefferWebdesign\FormManagerPlus\Service\UnavailableProOperations
+
+  SchefferWebdesign\FormManagerPlus\ViewHelpers\FormsViewHelper:
+    public: true
+  SchefferWebdesign\FormManagerPlus\ViewHelpers\TableConfigViewHelper:
+    public: true
+  SchefferWebdesign\FormManagerPlus\Controller\ListController:
+    public: true
+  SchefferWebdesign\FormManagerPlus\Service\RecentChanges:
+    public: true
+  SchefferWebdesign\FormManagerPlus\Service\DuplicateAssignments:
+    public: true
+
+  SchefferWebdesign\FormManagerPlus\Service\FormLifecycle:
+    public: true
+  SchefferWebdesign\FormManagerPlus\EventListener\FormFileLifecycle: ~

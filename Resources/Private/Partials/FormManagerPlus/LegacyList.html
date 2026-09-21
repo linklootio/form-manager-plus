@@ -1,0 +1,45 @@
+<html xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:plus="http://typo3.org/ns/SchefferWebdesign/FormManagerPlus/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:asset.css identifier="form-manager-plus" href="EXT:form_manager_plus/Resources/Public/Css/form-manager.css" />
+<f:asset.script identifier="form-manager-plus" src="EXT:form_manager_plus/Resources/Public/JavaScript/form-manager.js" defer="true" />
+<h1>{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:title')}</h1>
+<div class="fmp" data-fmp data-empty="{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:empty')}" data-ungrouped="{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:ungrouped')}" data-total="{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:total')}" data-page="{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:page')}" data-of="{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:of')}">
+  <div class="fmp-controls" data-controls hidden>
+    <label>{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:length')} <select class="form-select form-control" data-length><option>10</option><option selected>25</option><option>50</option><option>100</option><option>250</option></select></label>
+    <label>{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:group')} <select class="form-select form-control" data-category><option value="">{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:allGroups')}</option></select></label>
+    <label class="fmp-search">{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:search')} <input type="search" class="form-control" data-search /></label>
+    <button type="button" class="btn btn-default" data-reset>{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:reset')}</button>
+  </div>
+  <div class="table-fit">
+  <table class="table table-striped table-hover fmp-table">
+    <thead><tr>
+      <th scope="col" aria-sort="none"><button type="button" class="fmp-sort" data-sort="uid">{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:uid')} <span aria-hidden="true">↕</span></button></th>
+      <th scope="col" aria-sort="none"><button type="button" class="fmp-sort" data-sort="name">{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:name')} <span aria-hidden="true">↕</span></button></th>
+      <th scope="col" aria-sort="none"><button type="button" class="fmp-sort" data-sort="location">{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:location')} <span aria-hidden="true">↕</span></button></th>
+      <th scope="col" aria-sort="none"><button type="button" class="fmp-sort" data-sort="references">{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:references')} <span aria-hidden="true">↕</span></button></th>
+      <th scope="col">{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:actions')}</th>
+    </tr></thead>
+    <tbody>
+      <f:for each="{plus:forms()}" as="form">
+        <tr data-form data-uid="{form.fileUid}" data-name="{form.name}" data-location="{form.persistenceIdentifier}" data-references="{form.referenceCount}" data-group="{form.group}">
+          <td><f:if condition="{form.fileUid}"><f:then>{form.fileUid}</f:then><f:else>—</f:else></f:if></td>
+          <td><f:if condition="{form.editUrl}"><f:then><a href="{form.editUrl}">{form.name}</a></f:then><f:else>{form.name}</f:else></f:if>
+            <f:if condition="{form.invalid}"><span class="fmp-status">{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:invalid')}</span></f:if>
+            <f:if condition="{form.duplicateIdentifier}"><span class="fmp-status">{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:duplicateIdentifier')}</span></f:if>
+            <f:if condition="{form.readOnly}"><span class="fmp-status">{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:readOnly')}</span></f:if>
+          </td>
+          <td><code>{form.persistenceIdentifier}</code></td>
+          <td><f:if condition="{form.referenceCount}"><f:then><a href="#" class="fmp-badge" data-identifier="showReferences" data-form-persistence-identifier="{form.persistenceIdentifier}" data-form-name="{form.name}">{form.referenceCount}</a></f:then><f:else><span class="fmp-badge fmp-muted">0</span></f:else></f:if></td>
+          <td class="fmp-actions">
+            <f:if condition="{form.editUrl}"><a class="btn btn-default btn-sm" href="{form.editUrl}" title="{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:edit')}" aria-label="{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:edit')}"><core:icon identifier="actions-open" size="small" /></a></f:if>
+            <f:if condition="!{form.invalid}"><a class="btn btn-default btn-sm" href="#" data-identifier="duplicateForm" data-form-persistence-identifier="{form.persistenceIdentifier}" data-form-name="{form.name}" title="{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:duplicate')}" aria-label="{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:duplicate')}"><core:icon identifier="actions-duplicate" size="small" /></a></f:if>
+            <f:if condition="{form.removable} && ({form.invalid} == '0') && ({form.referenceCount} == '0')"><a class="btn btn-default btn-sm" href="#" data-identifier="removeForm" data-form-persistence-identifier="{form.persistenceIdentifier}" data-form-name="{form.name}" title="{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:delete')}" aria-label="{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:delete')}"><core:icon identifier="actions-edit-delete" size="small" /></a></f:if>
+            <f:if condition="{form.historyUrl}"><a class="btn btn-default btn-sm" href="{form.historyUrl}" title="{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:history')}" aria-label="{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:history')}"><core:icon identifier="actions-document-history-open" size="small" /></a></f:if>
+          </td>
+        </tr>
+      </f:for>
+    </tbody>
+  </table>
+  </div>
+  <div class="fmp-pagination" data-pagination hidden><span role="status" aria-live="polite" data-summary></span><button type="button" class="btn btn-default" data-previous>{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:previous')}</button><button type="button" class="btn btn-default" data-next>{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:next')}</button></div>
+</div>
+</html>

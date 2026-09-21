@@ -1,0 +1,21 @@
+name: Build reviewed release artifacts
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: zip, simplexml
+          coverage: none
+      - run: php Build/check-release.php
+      - run: php Build/build-release.php
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reviewed-release-candidate
+          path: dist/
+          if-no-files-found: error

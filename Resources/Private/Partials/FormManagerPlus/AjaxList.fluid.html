@@ -1,0 +1,19 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:asset.css identifier="fmp-pro" href="EXT:form_manager_plus/Resources/Public/Css/pro.css" />
+<f:asset.css identifier="form-manager-plus" href="EXT:form_manager_plus/Resources/Public/Css/form-manager.css" />
+<f:asset.css identifier="form-manager-plus-ajax" href="EXT:form_manager_plus/Resources/Public/Css/ajax-table.css" />
+<f:asset.module identifier="@scheffer/form-manager-plus/ajax-table.js" />
+<div class="fmp-ajax fmp-library" data-fmp-ajax data-pro="{tableConfig.pro}" data-core-config="{formManagerAppInitialData}" data-extension-version="{tableConfig.extensionVersion}" data-url="{tableConfig.url}" data-state-key="{tableConfig.stateKey}" data-major="{tableConfig.major}" data-language="{tableConfig.language}" data-tools-api="{tableConfig.toolsApi}" data-csrf="{tableConfig.csrf}" data-tools-page="{tableConfig.toolsPage}">
+ <f:for each="{tableConfig.icons}" as="icon" key="key"><template data-fmp-icon="{key}">{icon -> f:format.raw()}</template></f:for>
+ <aside class="fmp-library-sidebar" data-fmp-sidebar></aside>
+ <main class="fmp-library-main">
+  <header class="fmp-library-header" data-fmp-header></header>
+  <div class="fmp-library-toolbar" data-fmp-toolbar></div>
+  <p data-fmp-error role="alert" hidden></p>
+  <p class="fmp-maintenance-note" data-fmp-note hidden></p>
+  <table id="fmp-forms" class="fmp-table"><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody></tbody></table>
+  <noscript>{f:translate(key: 'LLL:EXT:form_manager_plus/Resources/Private/Language/locallang.xlf:requiresJs')}</noscript>
+ </main>
+ <div hidden aria-hidden="true" data-fmp-core-proxies><a href="#" data-identifier="duplicateForm" tabindex="-1"></a><a href="#" data-identifier="removeForm" tabindex="-1"></a><a href="#" data-identifier="showReferences" tabindex="-1"></a></div>
+</div>
+</html>

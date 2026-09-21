@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Module" />
+<f:section name="Content">
+<f:asset.css identifier="fmp-pro" href="EXT:form_manager_plus/Resources/Public/Css/pro.css" />
+<f:asset.css identifier="fmp-workbench" href="EXT:form_manager_plus/Resources/Public/Css/workbench.css" />
+<f:if condition="{pro}"><f:asset.css identifier="fmp-import-wizard" href="EXT:form_manager_plus_pro/Resources/Public/Css/import-wizard.css" /></f:if>
+<f:asset.module identifier="@scheffer/form-manager-plus/workbench.js" />
+<div class="fmp-workbench-brand" data-workbench-brand><a href="https://typo3.linkloot.io/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></svg><span>Link<span class="fmp-brand-loot">Loot</span></span></a><small>FORM MANAGER PLUS</small></div>
+<div class="fmp-workbench" data-fmp-workbench data-config="{config}">
+ <a href="{backUrl}" class="btn btn-default" data-back></a>
+ <header><h1>{formName}</h1><p data-intro></p></header>
+ <nav class="fmp-tabs" role="tablist" data-tabs></nav>
+ <div class="fmp-notice" role="status" data-notice hidden></div>
+ <section data-panel="categories" role="tabpanel" hidden></section><section data-panel="profile" role="tabpanel"></section>
+ <section data-panel="transfer" role="tabpanel" hidden></section>
+</div>
+</f:section>
+</html>

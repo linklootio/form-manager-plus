@@ -1,0 +1,11 @@
+/vendor/
+/.phpunit.cache/
+/.phpstan-cache/
+/.php-cs-fixer.cache
+/composer.lock
+/var/
+/public/
+/dist/
+/.build/
+/Documentation-GENERATED-temp/
+.env
