@@ -28,7 +28,8 @@ foreach (['extension', 'source'] as $kind) {
         if (!in_array($top, $directories, true) && !in_array($relative, $rootFiles, true)) continue;
         $content = file_get_contents($path);
         if ($content === false) throw new RuntimeException('Cannot read ' . $relative);
-        if (!str_starts_with($relative, 'Resources/Public/Vendor/')) $content = str_replace("\r\n", "\n", $content);
+        $textFile = preg_match('~(?:\.(?:php|json|md|rst|xml|xlf|ya?ml|html|css|[cm]?js|neon|sql|txt|toml|svg)|(?:^|/)(?:LICENSE|\.editorconfig|\.gitignore|\.gitattributes))$~i', $relative);
+        if ($textFile && !str_starts_with($relative, 'Resources/Public/Vendor/')) $content = str_replace("\r\n", "\n", $content);
         if (!$zip->addFromString($relative, $content)) throw new RuntimeException('Cannot package ' . $relative);
         $zip->setMtimeName($relative, 315532800);
         $zip->setExternalAttributesName($relative, ZipArchive::OPSYS_UNIX, 0100644 << 16);
