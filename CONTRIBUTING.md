@@ -18,7 +18,7 @@ For a Pro checkout next to the Lite checkout, configure its dependency before in
 git clone https://github.com/linklootio/form-manager-plus.git
 git clone https://github.com/linklootio/form-manager-plus-pro.git
 cd form-manager-plus-pro
-composer config repositories.lite '{"type":"path","url":"../form-manager-plus","options":{"versions":{"linkloot/form-manager-plus":"1.0.2"}}}'
+composer config repositories.lite '{"type":"path","url":"../form-manager-plus","options":{"versions":{"linkloot/form-manager-plus":"1.0.3"}}}'
 composer install
 ```
 

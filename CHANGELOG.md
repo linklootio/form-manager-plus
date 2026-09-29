@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.0.3
 
 - Show the list's modification date in the configured server time zone instead of UTC.
 - Show the read-only notice in the workbench profile only once, also after reloading.
