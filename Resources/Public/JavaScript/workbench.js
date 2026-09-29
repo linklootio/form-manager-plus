@@ -106,7 +106,8 @@ if (root) {
         let revision = 0, dirty = false;
         root.addEventListener('fmp-revision', event => { revision = event.detail; });
         const save = button(t('ui_06d1ae6bcb25'), 'btn btn-primary'); save.type = 'submit';
-        const reload = button(t('ui_bdc090ec61e3')); const actions = element('div', undefined, 'fmp-actions-row'); actions.append(save, reload); form.append(actions); panel.append(form);
+        const reload = button(t('ui_bdc090ec61e3')); const actions = element('div', undefined, 'fmp-actions-row'); actions.append(save, reload); form.append(actions);
+        const readOnlyNote = element('p', t('ui_b7f150cc24cc')); readOnlyNote.hidden = true; panel.append(form, readOnlyNote);
         const fill = async () => {
             const data = await call('details', {}, 'GET');
             responsibleUser.replaceChildren(new Option(t('ui_14d33bd014e6'), '0'));
@@ -118,7 +119,7 @@ if (root) {
             for (const [key, field] of Object.entries(fields)) { field.value = key === 'responsible_user' ? String(currentUser) : data.profile[key] || ''; field.readOnly = !data.editable; }
             responsibleUser.disabled = !data.editable || !config.pro;
             revision = Number(data.profile.revision); dirty = false; save.disabled = !data.editable;
-            if (!data.editable) panel.append(element('p', t('ui_b7f150cc24cc')));
+            readOnlyNote.hidden = data.editable;
         };
         form.addEventListener('input', () => { dirty = true; });
         responsibleUser.addEventListener('change', () => { dirty = true; });

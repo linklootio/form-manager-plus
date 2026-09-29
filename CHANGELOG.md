@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Show the list's modification date in the configured server time zone instead of UTC.
+- Show the read-only notice in the workbench profile only once, also after reloading.
+- Fix the sibling Lite path and the setup reference in CONTRIBUTING.md.
+
 ## 1.0.2
 
 - Centre the loading message horizontally and vertically in the available table area.
