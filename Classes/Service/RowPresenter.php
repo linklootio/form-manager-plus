@@ -88,7 +88,7 @@ final class RowPresenter
         }
         return ['selectable' => empty($form['invalid']), 'star' => $star, 'purpose' => $e($form['purpose'] ?? '') ?: '<span class="fmp-empty-value">—</span>',
             'category' => $categoryHtml ? implode('', $categoryHtml) : ($e($form['group'] ?? '') ?: '<span class="fmp-empty-value">' . (\SchefferWebdesign\FormManagerPlus\Service\UiText::get('php_92114e3e22d5')) . '</span>'),
-            'modified' => !empty($form['modifiedAt']) ? '<time datetime="' . gmdate('c', $form['modifiedAt']) . '">' . gmdate(\SchefferWebdesign\FormManagerPlus\Service\UiText::get('php_268135f9291a'), $form['modifiedAt']) . '</time>' : '—',
+            'modified' => !empty($form['modifiedAt']) ? '<time datetime="' . gmdate('c', $form['modifiedAt']) . '">' . date(\SchefferWebdesign\FormManagerPlus\Service\UiText::get('php_268135f9291a'), $form['modifiedAt']) . '</time>' : '—',
             'uid' => $form['fileUid'] ?: '—', 'name' => $name, 'location' => '<code>' . $e($identifier) . '</code>',
             'references' => $count ? '<a href="#" class="fmp-reference-count" data-fmp-action="showReferences" title="' . (\SchefferWebdesign\FormManagerPlus\Service\UiText::get('php_8d0ce2baadae')) . '" aria-label="' . $e($form['name']) . ': ' . $count . ' ' . $e($label('references')) . '">' . $this->icons->getIcon('actions-link', IconSize::SMALL)->render() . '<span>' . $count . '</span></a>' : '<span class="fmp-reference-zero" title="' . (\SchefferWebdesign\FormManagerPlus\Service\UiText::get('php_5a574d47bb6a')) . '">0</span>',
             'actions' => $actions, 'group' => (string)($form['group'] ?? ''), 'formName' => (string)$form['name'], 'identifier' => $identifier, 'favorite' => !empty($form['favorite'])];
